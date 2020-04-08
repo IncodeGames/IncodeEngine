@@ -1,7 +1,7 @@
 #pragma once
 #include "SDL2/SDL.h"
 
-#define Kilobytes(Value) ((Value) * 1024)
+#define Kilobytes(Value) ((Value)*1024)
 #define Megabytes(Value) (Kilobytes(Value) * 1024)
 #define Gigabytes(Value) (Megabytes(Value) * 1024)
 

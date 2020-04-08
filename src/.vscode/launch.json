@@ -5,7 +5,7 @@
             "name": "C++ Launch (Windows)",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "W:\\build\\sdl_handmade.exe",
+            "program": "G:\\C++ Projects\\IncodeEngine\\build\\sdl_handmade.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceRoot}",
