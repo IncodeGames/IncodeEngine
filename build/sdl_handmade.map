@@ -1,862 +1,560 @@
  sdl_handmade
 
- Timestamp is 5e8d505d (Tue Apr  7 21:17:33 2020)
+ Timestamp is 5e921dad (Sat Apr 11 12:42:37 2020)
 
  Preferred load address is 0000000140000000
 
  Start         Length     Name                   Class
  0001:00000000 00000502H .text                   CODE
- 0001:00000510 00002ebbH .text$mn                CODE
- 0001:000033d0 00000012H .text$mn$00             CODE
- 0001:000033f0 00000106H .text$x                 CODE
- 0002:00000000 00000358H .idata$5                DATA
- 0002:00000358 00000010H .00cfg                  DATA
- 0002:00000368 00000008H .CRT$XCA                DATA
- 0002:00000370 00000008H .CRT$XCAA               DATA
- 0002:00000378 00000008H .CRT$XCZ                DATA
- 0002:00000380 00000008H .CRT$XIA                DATA
- 0002:00000388 00000008H .CRT$XIAA               DATA
- 0002:00000390 00000008H .CRT$XIAC               DATA
- 0002:00000398 00000008H .CRT$XIZ                DATA
- 0002:000003a0 00000008H .CRT$XPA                DATA
- 0002:000003a8 00000008H .CRT$XPZ                DATA
- 0002:000003b0 00000008H .CRT$XTA                DATA
- 0002:000003b8 00000008H .CRT$XTZ                DATA
- 0002:000003c0 00000000H .gfids$x                DATA
- 0002:000003c0 000004d4H .rdata                  DATA
- 0002:00000898 000001f4H .rdata$r                DATA
- 0002:00000a8c 000002ecH .rdata$zzzdbg           DATA
- 0002:00000d78 00000008H .rtc$IAA                DATA
- 0002:00000d80 00000008H .rtc$IZZ                DATA
- 0002:00000d88 00000008H .rtc$TAA                DATA
- 0002:00000d90 00000008H .rtc$TZZ                DATA
- 0002:00000da0 0000033cH .xdata                  DATA
- 0002:000010e0 000000ecH .xdata$x                DATA
- 0002:000011cc 00000000H .edata                  DATA
- 0002:000011cc 000000c8H .idata$2                DATA
- 0002:00001294 00000014H .idata$3                DATA
- 0002:000012a8 00000358H .idata$4                DATA
- 0002:00001600 0000089eH .idata$6                DATA
+ 0001:00000510 00001a1fH .text$mn                CODE
+ 0001:00001f30 00000012H .text$mn$00             CODE
+ 0001:00001f42 00000036H .text$x                 CODE
+ 0002:00000000 000002f0H .idata$5                DATA
+ 0002:000002f0 00000010H .00cfg                  DATA
+ 0002:00000300 00000008H .CRT$XCA                DATA
+ 0002:00000308 00000008H .CRT$XCAA               DATA
+ 0002:00000310 00000008H .CRT$XCZ                DATA
+ 0002:00000318 00000008H .CRT$XIA                DATA
+ 0002:00000320 00000008H .CRT$XIAA               DATA
+ 0002:00000328 00000008H .CRT$XIAC               DATA
+ 0002:00000330 00000008H .CRT$XIZ                DATA
+ 0002:00000338 00000008H .CRT$XPA                DATA
+ 0002:00000340 00000008H .CRT$XPZ                DATA
+ 0002:00000348 00000008H .CRT$XTA                DATA
+ 0002:00000350 00000008H .CRT$XTZ                DATA
+ 0002:00000358 00000000H .gfids$x                DATA
+ 0002:00000360 00000364H .rdata                  DATA
+ 0002:000006c4 000002b4H .rdata$zzzdbg           DATA
+ 0002:00000978 00000008H .rtc$IAA                DATA
+ 0002:00000980 00000008H .rtc$IZZ                DATA
+ 0002:00000988 00000008H .rtc$TAA                DATA
+ 0002:00000990 00000008H .rtc$TZZ                DATA
+ 0002:00000998 0000016cH .xdata                  DATA
+ 0002:00000b04 00000000H .edata                  DATA
+ 0002:00000b04 000000b4H .idata$2                DATA
+ 0002:00000bb8 00000014H .idata$3                DATA
+ 0002:00000bd0 000002f0H .idata$4                DATA
+ 0002:00000ec0 00000786H .idata$6                DATA
  0003:00000000 00000064H .data                   DATA
- 0003:00000068 000000a0H .data$r                 DATA
- 0003:00000110 00000600H .bss                    DATA
- 0004:00000000 000004c8H .pdata                  DATA
+ 0003:00000070 00000600H .bss                    DATA
+ 0004:00000000 00000234H .pdata                  DATA
 
   Address         Publics by Value              Rva+Base               Lib:Object
 
- 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
- 0000:00000000       ___safe_se_handler_count   0000000000000000     <absolute>
  0000:00000000       ___safe_se_handler_table   0000000000000000     <absolute>
  0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
  0000:00000100       __guard_flags              0000000000000100     <absolute>
  0000:00000000       __ImageBase                0000000140000000     <linker-defined>
  0001:00000000       main                       0000000140001000 f   SDL2main:SDL_windows_main.obj
  0001:00000400       wmain                      0000000140001400 f   SDL2main:SDL_windows_main.obj
  0001:000004e0       WinMain                    00000001400014e0 f   SDL2main:SDL_windows_main.obj
  0001:00000510       SDL_main                   0000000140001510 f   sdl_handmade.obj
- 0001:00000c60       ?GameUpdateAndRenderStub@@YAXPEAUgame_memory@@PEAUSDL_Window@@@Z 0000000140001c60 f   sdl_handmade.obj
- 0001:00000c80       ?GameGetSoundSamplesStub@@YAXPEAUgame_memory@@@Z 0000000140001c80 f   sdl_handmade.obj
- 0001:00000c90       GameUpdateAndRender        0000000140001c90 f   sdl_handmade.obj
- 0001:00000dc0       GameGetSoundSamples        0000000140001dc0 f   sdl_handmade.obj
- 0001:00001180       ??$?0AEBV?$allocator@D@std@@$$V@?$_Compressed_pair@U?$_Wrap_alloc@V?$allocator@D@std@@@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@U_One_then_variadic_args_t@1@AEBV?$allocator@D@1@@Z 0000000140002180 f i sdl_handmade.obj
- 0001:000011c0       ??$_Addressof@D@std@@YAPEADAEADU?$integral_constant@_N$0A@@0@@Z 00000001400021c0 f i sdl_handmade.obj
- 0001:000011d0       ??$_Allocate@D@std@@YAPEAD_KPEAD_N@Z 00000001400021d0 f i sdl_handmade.obj
- 0001:000012c0       ??$_Deallocate@D@std@@YAXPEAD_K@Z 00000001400022c0 f i sdl_handmade.obj
- 0001:000013a0       ??$__vcrt_va_start_verify_argument_type@QEBD@@YAXXZ 00000001400023a0 f i sdl_handmade.obj
- 0001:000013b0       ??$addressof@D@std@@YAPEADAEAD@Z 00000001400023b0 f i sdl_handmade.obj
- 0001:000013d0       ??$construct@PEADAEAPEAD@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QEAAXPEAPEADAEAPEAD@Z 00000001400023d0 f i sdl_handmade.obj
- 0001:00001410       ??$construct@PEADAEAPEAD@?$allocator@D@std@@QEAAXPEAPEADAEAPEAD@Z 0000000140002410 f i sdl_handmade.obj
- 0001:00001470       ??$construct@PEADAEAPEAD@?$allocator_traits@V?$allocator@D@std@@@std@@SAXAEAV?$allocator@D@1@PEAPEADAEAPEAD@Z 0000000140002470 f i sdl_handmade.obj
- 0001:000014b0       ??$destroy@PEAD@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QEAAXPEAPEAD@Z 00000001400024b0 f i sdl_handmade.obj
- 0001:000014e0       ??$destroy@PEAD@?$allocator@D@std@@QEAAXPEAPEAD@Z 00000001400024e0 f i sdl_handmade.obj
- 0001:000014f0       ??$destroy@PEAD@?$allocator_traits@V?$allocator@D@std@@@std@@SAXAEAV?$allocator@D@1@PEAPEAD@Z 00000001400024f0 f i sdl_handmade.obj
- 0001:00001520       ??0?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAA@AEBV?$allocator@D@1@@Z 0000000140002520 f i sdl_handmade.obj
- 0001:00001550       ??0?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ 0000000140002550 f i sdl_handmade.obj
- 0001:00001580       ??0?$_Wrap_alloc@V?$allocator@D@std@@@std@@QEAA@AEBV?$allocator@D@1@@Z 0000000140002580 f i sdl_handmade.obj
- 0001:000015b0       ??0?$allocator@D@std@@QEAA@AEBV01@@Z 00000001400025b0 f i sdl_handmade.obj
- 0001:000015c0       ??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@PEBD@Z 00000001400025c0 f i sdl_handmade.obj
- 0001:00001610       ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ 0000000140002610 f i sdl_handmade.obj
- 0001:00001640       ??2@YAPEAX_KPEAX@Z         0000000140002640 f i sdl_handmade.obj
- 0001:00001650       ?Win32GetLastWriteTime@@YA?AU_FILETIME@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z 0000000140002650 f i sdl_handmade.obj
- 0001:000016d0       ?_Bx@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAAAEAT_Bxty@?$_String_val@U?$_Simple_types@D@std@@@2@XZ 00000001400026d0 f i sdl_handmade.obj
- 0001:000016f0       ?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z 00000001400026f0 f i sdl_handmade.obj
- 0001:00001910       ?_Eos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K@Z 0000000140002910 f i sdl_handmade.obj
- 0001:00001960       ?_Get_second@?$_Compressed_pair@U?$_Wrap_alloc@V?$allocator@D@std@@@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAAAEAV?$_String_val@U?$_Simple_types@D@std@@@2@XZ 0000000140002960 f i sdl_handmade.obj
- 0001:00001960       ?_Get_first@?$_Compressed_pair@U?$_Wrap_alloc@V?$allocator@D@std@@@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEBAAEBU?$_Wrap_alloc@V?$allocator@D@std@@@2@XZ 0000000140002960 f i sdl_handmade.obj
- 0001:00001960       ?_Get_first@?$_Compressed_pair@U?$_Wrap_alloc@V?$allocator@D@std@@@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAAAEAU?$_Wrap_alloc@V?$allocator@D@std@@@2@XZ 0000000140002960 f i sdl_handmade.obj
- 0001:00001960       ?_Get_second@?$_Compressed_pair@U?$_Wrap_alloc@V?$allocator@D@std@@@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEBAAEBV?$_String_val@U?$_Simple_types@D@std@@@2@XZ 0000000140002960 f i sdl_handmade.obj
- 0001:00001960       ??$forward@AEAPEAD@std@@YAAEAPEADAEAPEAD@Z 0000000140002960 f i sdl_handmade.obj
- 0001:00001960       ??$forward@AEBV?$allocator@D@std@@@std@@YAAEBV?$allocator@D@0@AEBV10@@Z 0000000140002960 f i sdl_handmade.obj
- 0001:00001960       ??0?$allocator@D@std@@QEAA@XZ 0000000140002960 f i sdl_handmade.obj
- 0001:00001970       ?_Getal@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEBAAEBU?$_Wrap_alloc@V?$allocator@D@std@@@2@XZ 0000000140002970 f i sdl_handmade.obj
- 0001:00001970       ?_Get_data@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEBAAEBV?$_String_val@U?$_Simple_types@D@std@@@2@XZ 0000000140002970 f i sdl_handmade.obj
- 0001:00001970       ?_Getal@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAAAEAU?$_Wrap_alloc@V?$allocator@D@std@@@2@XZ 0000000140002970 f i sdl_handmade.obj
- 0001:00001970       ?_Get_data@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAAAEAV?$_String_val@U?$_Simple_types@D@std@@@2@XZ 0000000140002970 f i sdl_handmade.obj
- 0001:00001990       ?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA_N_K_N@Z 0000000140002990 f i sdl_handmade.obj
- 0001:00001a80       ?_Inside@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA_NPEBD@Z 0000000140002a80 f i sdl_handmade.obj
- 0001:00001ae0       ?_Myptr@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEBAPEBDXZ 0000000140002ae0 f i sdl_handmade.obj
- 0001:00001ae0       ?_Myptr@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAAPEADXZ 0000000140002ae0 f i sdl_handmade.obj
- 0001:00001b00       ?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEAAPEADXZ 0000000140002b00 f i sdl_handmade.obj
- 0001:00001b00       ?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAPEBDXZ 0000000140002b00 f i sdl_handmade.obj
- 0001:00001b40       ?_Myres@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAAAEA_KXZ 0000000140002b40 f i sdl_handmade.obj
- 0001:00001b60       ?_Mysize@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAAAEA_KXZ 0000000140002b60 f i sdl_handmade.obj
- 0001:00001b60       ?_Mysize@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEBAAEB_KXZ 0000000140002b60 f i sdl_handmade.obj
- 0001:00001b80       ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_N_K@Z 0000000140002b80 f i sdl_handmade.obj
- 0001:00001c80       ?_Xlen@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ 0000000140002c80 f i sdl_handmade.obj
- 0001:00001ca0       ?_Xran@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ 0000000140002ca0 f i sdl_handmade.obj
- 0001:00001cc0       ?allocate@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QEAAPEAD_K@Z 0000000140002cc0 f i sdl_handmade.obj
- 0001:00001cf0       ?allocate@?$allocator@D@std@@QEAAPEAD_K@Z 0000000140002cf0 f i sdl_handmade.obj
- 0001:00001d20       ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@AEBV12@_K1@Z 0000000140002d20 f i sdl_handmade.obj
- 0001:00001e20       ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@PEBD@Z 0000000140002e20 f i sdl_handmade.obj
- 0001:00001e50       ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@PEBD_K@Z 0000000140002e50 f i sdl_handmade.obj
- 0001:00001f00       ?assign@?$char_traits@D@std@@SAXAEADAEBD@Z 0000000140002f00 f i sdl_handmade.obj
- 0001:00001f20       ?c_str@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAPEBDXZ 0000000140002f20 f i sdl_handmade.obj
- 0001:00001f50       ?copy@?$char_traits@D@std@@SAPEADPEADPEBD_K@Z 0000000140002f50 f i sdl_handmade.obj
- 0001:00001fa0       ?deallocate@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QEAAXPEAD_K@Z 0000000140002fa0 f i sdl_handmade.obj
- 0001:00001fd0       ?deallocate@?$allocator@D@std@@QEAAXPEAD_K@Z 0000000140002fd0 f i sdl_handmade.obj
- 0001:00002000       ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K0@Z 0000000140003000 f i sdl_handmade.obj
- 0001:000020e0       ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K@Z 00000001400030e0 f i sdl_handmade.obj
- 0001:00002130       ?length@?$char_traits@D@std@@SA_KPEBD@Z 0000000140003130 f i sdl_handmade.obj
- 0001:00002190       ?max_size@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QEBA_KU_Nil@2@@Z 0000000140003190 f i sdl_handmade.obj
- 0001:000021b0       ?max_size@?$allocator@D@std@@QEBA_KXZ 00000001400031b0 f i sdl_handmade.obj
- 0001:000021c0       ?max_size@?$allocator_traits@V?$allocator@D@std@@@std@@SA_KAEBV?$allocator@D@2@@Z 00000001400031c0 f i sdl_handmade.obj
- 0001:000021e0       ?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ 00000001400031e0 f i sdl_handmade.obj
- 0001:00002230       ?move@?$char_traits@D@std@@SAPEADPEADPEBD_K@Z 0000000140003230 f i sdl_handmade.obj
- 0001:00002280       ?size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ 0000000140003280 f i sdl_handmade.obj
- 0001:000022a0       __local_stdio_printf_options 00000001400032a0 f i sdl_handmade.obj
- 0001:000022b0       _vfprintf_l                00000001400032b0 f i sdl_handmade.obj
- 0001:00002300       printf                     0000000140003300 f i sdl_handmade.obj
- 0001:0000235e       SDL_memset                 000000014000335e f   SDL2:SDL2.dll
- 0001:00002364       SDL_GetError               0000000140003364 f   SDL2:SDL2.dll
- 0001:0000236a       SDL_OpenAudioDevice        000000014000336a f   SDL2:SDL2.dll
- 0001:00002370       SDL_PauseAudioDevice       0000000140003370 f   SDL2:SDL2.dll
- 0001:00002376       SDL_GetDesktopDisplayMode  0000000140003376 f   SDL2:SDL2.dll
- 0001:0000237c       SDL_GetWindowDisplayIndex  000000014000337c f   SDL2:SDL2.dll
- 0001:00002382       SDL_CreateWindow           0000000140003382 f   SDL2:SDL2.dll
- 0001:00002388       SDL_SetWindowSize          0000000140003388 f   SDL2:SDL2.dll
- 0001:0000238e       SDL_SetWindowFullscreen    000000014000338e f   SDL2:SDL2.dll
- 0001:00002394       SDL_GetWindowSurface       0000000140003394 f   SDL2:SDL2.dll
- 0001:0000239a       SDL_GL_SetAttribute        000000014000339a f   SDL2:SDL2.dll
- 0001:000023a0       SDL_GL_CreateContext       00000001400033a0 f   SDL2:SDL2.dll
- 0001:000023a6       SDL_GL_SwapWindow          00000001400033a6 f   SDL2:SDL2.dll
- 0001:000023ac       SDL_PollEvent              00000001400033ac f   SDL2:SDL2.dll
- 0001:000023b2       SDL_LoadObject             00000001400033b2 f   SDL2:SDL2.dll
- 0001:000023b8       SDL_LoadFunction           00000001400033b8 f   SDL2:SDL2.dll
- 0001:000023be       SDL_UnloadObject           00000001400033be f   SDL2:SDL2.dll
- 0001:000023c4       SDL_Log                    00000001400033c4 f   SDL2:SDL2.dll
- 0001:000023ca       SDL_ShowSimpleMessageBox   00000001400033ca f   SDL2:SDL2.dll
- 0001:000023d0       SDL_GetPerformanceCounter  00000001400033d0 f   SDL2:SDL2.dll
- 0001:000023d6       SDL_GetPerformanceFrequency 00000001400033d6 f   SDL2:SDL2.dll
- 0001:000023dc       SDL_Delay                  00000001400033dc f   SDL2:SDL2.dll
- 0001:000023e2       SDL_Init                   00000001400033e2 f   SDL2:SDL2.dll
- 0001:000023e8       ??2@YAPEAX_K@Z             00000001400033e8 f   MSVCRT:new_scalar.obj
- 0001:00002424       ??3@YAXPEAX@Z              0000000140003424 f   MSVCRT:delete_scalar.obj
- 0001:0000242c       __GSHandlerCheck           000000014000342c f   MSVCRT:_gshandler_.obj
- 0001:0000244c       __GSHandlerCheckCommon     000000014000344c f   MSVCRT:_gshandler_.obj
- 0001:000024c0       __security_check_cookie    00000001400034c0 f   MSVCRT:_amdsecgs_.obj
- 0001:0000274c       mainCRTStartup             000000014000374c f   MSVCRT:exe_main.obj
- 0001:00002760       ??0bad_alloc@std@@QEAA@AEBV01@@Z 0000000140003760 f i MSVCRT:throw_bad_alloc.obj
- 0001:000027a0       ??0bad_alloc@std@@QEAA@XZ  00000001400037a0 f i MSVCRT:throw_bad_alloc.obj
- 0001:000027c0       ??0bad_array_new_length@std@@QEAA@AEBV01@@Z 00000001400037c0 f i MSVCRT:throw_bad_alloc.obj
- 0001:00002800       ??0bad_array_new_length@std@@QEAA@XZ 0000000140003800 f i MSVCRT:throw_bad_alloc.obj
- 0001:00002820       ??0exception@std@@QEAA@AEBV01@@Z 0000000140003820 f i MSVCRT:throw_bad_alloc.obj
- 0001:00002858       ??1bad_alloc@std@@UEAA@XZ  0000000140003858 f i MSVCRT:throw_bad_alloc.obj
- 0001:00002858       ??1bad_array_new_length@std@@UEAA@XZ 0000000140003858 f i MSVCRT:throw_bad_alloc.obj
- 0001:0000286c       ??_Gexception@std@@UEAAPEAXI@Z 000000014000386c f i MSVCRT:throw_bad_alloc.obj
- 0001:0000286c       ??_Gbad_array_new_length@std@@UEAAPEAXI@Z 000000014000386c f i MSVCRT:throw_bad_alloc.obj
- 0001:0000286c       ??_Ebad_alloc@std@@UEAAPEAXI@Z 000000014000386c f i MSVCRT:throw_bad_alloc.obj
- 0001:0000286c       ??_Eexception@std@@UEAAPEAXI@Z 000000014000386c f i MSVCRT:throw_bad_alloc.obj
- 0001:0000286c       ??_Ebad_array_new_length@std@@UEAAPEAXI@Z 000000014000386c f i MSVCRT:throw_bad_alloc.obj
- 0001:0000286c       ??_Gbad_alloc@std@@UEAAPEAXI@Z 000000014000386c f i MSVCRT:throw_bad_alloc.obj
- 0001:000028b0       ?__scrt_throw_std_bad_alloc@@YAXXZ 00000001400038b0 f   MSVCRT:throw_bad_alloc.obj
- 0001:000028d0       ?__scrt_throw_std_bad_array_new_length@@YAXXZ 00000001400038d0 f   MSVCRT:throw_bad_alloc.obj
- 0001:000028f0       ?what@exception@std@@UEBAPEBDXZ 00000001400038f0 f i MSVCRT:throw_bad_alloc.obj
- 0001:00002904       __raise_securityfailure    0000000140003904 f   MSVCRT:gs_report.obj
- 0001:00002938       __report_gsfailure         0000000140003938 f   MSVCRT:gs_report.obj
- 0001:00002a80       __scrt_acquire_startup_lock 0000000140003a80 f   MSVCRT:utility.obj
- 0001:00002abc       __scrt_initialize_crt      0000000140003abc f   MSVCRT:utility.obj
- 0001:00002b08       __scrt_initialize_onexit_tables 0000000140003b08 f   MSVCRT:utility.obj
- 0001:00002bd4       __scrt_is_nonwritable_in_current_image 0000000140003bd4 f   MSVCRT:utility.obj
- 0001:00002c70       __scrt_release_startup_lock 0000000140003c70 f   MSVCRT:utility.obj
- 0001:00002c94       __scrt_uninitialize_crt    0000000140003c94 f   MSVCRT:utility.obj
- 0001:00002cc0       _onexit                    0000000140003cc0 f   MSVCRT:utility.obj
- 0001:00002d10       atexit                     0000000140003d10 f   MSVCRT:utility.obj
- 0001:00002d28       __security_init_cookie     0000000140003d28 f   MSVCRT:gs_support.obj
- 0001:00002dd4       _get_startup_argv_mode     0000000140003dd4 f   MSVCRT:argv_mode.obj
- 0001:00002ddc       __scrt_initialize_winrt    0000000140003ddc f   MSVCRT:utility_desktop.obj
- 0001:00002ddc       _get_startup_commit_mode   0000000140003ddc f   MSVCRT:commit_mode.obj
- 0001:00002ddc       _get_startup_thread_locale_mode 0000000140003ddc f   MSVCRT:thread_locale.obj
- 0001:00002ddc       _matherr                   0000000140003ddc f   MSVCRT:matherr.obj
- 0001:00002ddc       _get_startup_new_mode      0000000140003ddc f   MSVCRT:new_mode.obj
- 0001:00002de0       _get_startup_file_mode     0000000140003de0 f   MSVCRT:file_mode.obj
- 0001:00002de8       ?__scrt_initialize_type_info@@YAXXZ 0000000140003de8 f   MSVCRT:tncleanup.obj
- 0001:00002df8       _initialize_invalid_parameter_handler 0000000140003df8 f   MSVCRT:invalid_parameter_handler.obj
- 0001:00002df8       _initialize_denormal_control 0000000140003df8 f   MSVCRT:denormal_control.obj
- 0001:00002df8       _guard_check_icall_nop     0000000140003df8 f   MSVCRT:guard_support.obj
- 0001:00002dfc       __local_stdio_scanf_options 0000000140003dfc f i MSVCRT:default_local_stdio_options.obj
- 0001:00002e04       __scrt_initialize_default_local_stdio_options 0000000140003e04 f   MSVCRT:default_local_stdio_options.obj
- 0001:00002e20       __scrt_is_user_matherr_present 0000000140003e20 f   MSVCRT:matherr_detection.obj
- 0001:00002e2c       __scrt_get_dyn_tls_init_callback 0000000140003e2c f   MSVCRT:dyn_tls_init.obj
- 0001:00002e34       __scrt_get_dyn_tls_dtor_callback 0000000140003e34 f   MSVCRT:dyn_tls_dtor.obj
- 0001:00002e3c       __scrt_fastfail            0000000140003e3c f   MSVCRT:utility_desktop.obj
- 0001:00002f84       __scrt_is_managed_app      0000000140003f84 f   MSVCRT:utility_desktop.obj
- 0001:00002fd8       __scrt_set_unhandled_exception_filter 0000000140003fd8 f   MSVCRT:utility_desktop.obj
- 0001:00002fe8       __scrt_unhandled_exception_filter 0000000140003fe8 f   MSVCRT:utility_desktop.obj
- 0001:00003020       _RTC_Initialize            0000000140004020 f   MSVCRT:_initsect_.obj
- 0001:0000306c       _RTC_Terminate             000000014000406c f   MSVCRT:_initsect_.obj
- 0001:000030b8       _guard_check_icall         00000001400040b8 f i MSVCRT:checkcfg.obj
- 0001:000030c0       ??3@YAXPEAX_K@Z            00000001400040c0 f   MSVCRT:delete_scalar_size.obj
- 0001:000030c8       ??_Gtype_info@@UEAAPEAXI@Z 00000001400040c8 f i MSVCRT:std_type_info_static.obj
- 0001:000030c8       ??_Etype_info@@UEAAPEAXI@Z 00000001400040c8 f i MSVCRT:std_type_info_static.obj
- 0001:000030f4       __isa_available_init       00000001400040f4 f   MSVCRT:_cpu_disp_.obj
- 0001:000032b8       __scrt_is_ucrt_dll_in_use  00000001400042b8 f   MSVCRT:ucrt_detection.obj
- 0001:000032d0       IsProcessorFeaturePresent  00000001400042d0 f   kernel32:KERNEL32.dll
- 0001:000032d6       _CxxThrowException         00000001400042d6 f   vcruntime:VCRUNTIME140.dll
- 0001:000032dc       __CxxFrameHandler3         00000001400042dc f   vcruntime:VCRUNTIME140.dll
- 0001:000032e2       __telemetry_main_invoke_trigger 00000001400042e2 f   vcruntime:VCRUNTIME140.dll
- 0001:000032e8       __telemetry_main_return_trigger 00000001400042e8 f   vcruntime:VCRUNTIME140.dll
- 0001:000032ee       __C_specific_handler       00000001400042ee f   vcruntime:VCRUNTIME140.dll
- 0001:000032f4       __std_exception_copy       00000001400042f4 f   vcruntime:VCRUNTIME140.dll
- 0001:000032fa       __std_exception_destroy    00000001400042fa f   vcruntime:VCRUNTIME140.dll
- 0001:00003300       memset                     0000000140004300 f   vcruntime:VCRUNTIME140.dll
- 0001:00003306       _callnewh                  0000000140004306 f   ucrt:api-ms-win-crt-heap-l1-1-0.dll
- 0001:0000330c       malloc                     000000014000430c f   ucrt:api-ms-win-crt-heap-l1-1-0.dll
- 0001:00003312       free                       0000000140004312 f   ucrt:api-ms-win-crt-heap-l1-1-0.dll
- 0001:00003318       _seh_filter_exe            0000000140004318 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0001:0000331e       _set_app_type              000000014000431e f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0001:00003324       __setusermatherr           0000000140004324 f   ucrt:api-ms-win-crt-math-l1-1-0.dll
- 0001:0000332a       _configure_narrow_argv     000000014000432a f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0001:00003330       _initialize_narrow_environment 0000000140004330 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0001:00003336       _get_initial_narrow_environment 0000000140004336 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0001:0000333c       _initterm                  000000014000433c f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0001:00003342       _initterm_e                0000000140004342 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0001:00003348       exit                       0000000140004348 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0001:0000334e       _exit                      000000014000434e f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0001:00003354       _set_fmode                 0000000140004354 f   ucrt:api-ms-win-crt-stdio-l1-1-0.dll
- 0001:0000335a       __p___argc                 000000014000435a f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0001:00003360       __p___argv                 0000000140004360 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0001:00003366       _cexit                     0000000140004366 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0001:0000336c       _c_exit                    000000014000436c f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0001:00003372       _register_thread_local_exe_atexit_callback 0000000140004372 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0001:00003378       _configthreadlocale        0000000140004378 f   ucrt:api-ms-win-crt-locale-l1-1-0.dll
- 0001:0000337e       _set_new_mode              000000014000437e f   ucrt:api-ms-win-crt-heap-l1-1-0.dll
- 0001:00003384       __p__commode               0000000140004384 f   ucrt:api-ms-win-crt-stdio-l1-1-0.dll
- 0001:0000338a       _initialize_onexit_table   000000014000438a f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0001:00003390       _register_onexit_function  0000000140004390 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0001:00003396       _crt_atexit                0000000140004396 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0001:0000339c       terminate                  000000014000439c f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0001:000033a2       SDL_free                   00000001400043a2 f   SDL2:SDL2.dll
- 0001:000033a8       SDL_malloc                 00000001400043a8 f   SDL2:SDL2.dll
- 0001:000033ae       SDL_iconv_string           00000001400043ae f   SDL2:SDL2.dll
- 0001:000033b4       SDL_wcslen                 00000001400043b4 f   SDL2:SDL2.dll
- 0001:000033ba       SDL_isspace                00000001400043ba f   SDL2:SDL2.dll
- 0001:000033c0       SDL_SetMainReady           00000001400043c0 f   SDL2:SDL2.dll
- 0001:000033c8       __acrt_initialize          00000001400043c8 f   MSVCRT:ucrt_stubs.obj
- 0001:000033c8       __acrt_uninitialize        00000001400043c8 f   MSVCRT:ucrt_stubs.obj
- 0001:000033c8       __scrt_stub_for_acrt_initialize 00000001400043c8 f   MSVCRT:ucrt_stubs.obj
- 0001:000033c8       __vcrt_uninitialize        00000001400043c8 f   MSVCRT:ucrt_stubs.obj
- 0001:000033c8       __scrt_stub_for_acrt_uninitialize 00000001400043c8 f   MSVCRT:ucrt_stubs.obj
- 0001:000033c8       __vcrt_initialize          00000001400043c8 f   MSVCRT:ucrt_stubs.obj
- 0001:000033e0       _guard_dispatch_icall_nop  00000001400043e0 f   MSVCRT:_guard_dispatch_.obj
- 0002:00000000       __imp_GetCommandLineW      0000000140005000     kernel32:KERNEL32.dll
- 0002:00000008       __imp_GetModuleHandleW     0000000140005008     kernel32:KERNEL32.dll
- 0002:00000010       __imp_IsDebuggerPresent    0000000140005010     kernel32:KERNEL32.dll
- 0002:00000018       __imp_InitializeSListHead  0000000140005018     kernel32:KERNEL32.dll
- 0002:00000020       __imp_GetSystemTimeAsFileTime 0000000140005020     kernel32:KERNEL32.dll
- 0002:00000028       __imp_GetCurrentThreadId   0000000140005028     kernel32:KERNEL32.dll
- 0002:00000030       __imp_GetCurrentProcessId  0000000140005030     kernel32:KERNEL32.dll
- 0002:00000038       __imp_QueryPerformanceCounter 0000000140005038     kernel32:KERNEL32.dll
- 0002:00000040       __imp_IsProcessorFeaturePresent 0000000140005040     kernel32:KERNEL32.dll
- 0002:00000048       __imp_TerminateProcess     0000000140005048     kernel32:KERNEL32.dll
- 0002:00000050       __imp_GetCurrentProcess    0000000140005050     kernel32:KERNEL32.dll
- 0002:00000058       __imp_SetUnhandledExceptionFilter 0000000140005058     kernel32:KERNEL32.dll
- 0002:00000060       __imp_UnhandledExceptionFilter 0000000140005060     kernel32:KERNEL32.dll
- 0002:00000068       __imp_RtlVirtualUnwind     0000000140005068     kernel32:KERNEL32.dll
- 0002:00000070       __imp_RtlLookupFunctionEntry 0000000140005070     kernel32:KERNEL32.dll
- 0002:00000078       __imp_RtlCaptureContext    0000000140005078     kernel32:KERNEL32.dll
- 0002:00000080       __imp_CopyFileA            0000000140005080     kernel32:KERNEL32.dll
- 0002:00000088       __imp_VirtualAlloc         0000000140005088     kernel32:KERNEL32.dll
- 0002:00000090       __imp_GetFileAttributesExA 0000000140005090     kernel32:KERNEL32.dll
- 0002:00000098       __imp_CompareFileTime      0000000140005098     kernel32:KERNEL32.dll
- 0002:000000a0       \177KERNEL32_NULL_THUNK_DATA 00000001400050a0     kernel32:KERNEL32.dll
- 0002:000000a8       __imp_?_Xout_of_range@std@@YAXPEBD@Z 00000001400050a8     msvcprt:MSVCP140.dll
- 0002:000000b0       __imp_?_Xbad_alloc@std@@YAXXZ 00000001400050b0     msvcprt:MSVCP140.dll
- 0002:000000b8       __imp_?_Xlength_error@std@@YAXPEBD@Z 00000001400050b8     msvcprt:MSVCP140.dll
- 0002:000000c0       \177MSVCP140_NULL_THUNK_DATA 00000001400050c0     msvcprt:MSVCP140.dll
- 0002:000000c8       __imp_glDrawArrays         00000001400050c8     opengl32:OPENGL32.dll
- 0002:000000d0       __imp_glClearColor         00000001400050d0     opengl32:OPENGL32.dll
- 0002:000000d8       __imp_glVertexPointer      00000001400050d8     opengl32:OPENGL32.dll
- 0002:000000e0       __imp_glViewport           00000001400050e0     opengl32:OPENGL32.dll
- 0002:000000e8       __imp_glClear              00000001400050e8     opengl32:OPENGL32.dll
- 0002:000000f0       __imp_glEnableClientState  00000001400050f0     opengl32:OPENGL32.dll
- 0002:000000f8       __imp_glClearDepth         00000001400050f8     opengl32:OPENGL32.dll
- 0002:00000100       \177OPENGL32_NULL_THUNK_DATA 0000000140005100     opengl32:OPENGL32.dll
- 0002:00000108       __imp_SDL_Init             0000000140005108     SDL2:SDL2.dll
- 0002:00000110       __imp_SDL_Delay            0000000140005110     SDL2:SDL2.dll
- 0002:00000118       __imp_SDL_GetPerformanceFrequency 0000000140005118     SDL2:SDL2.dll
- 0002:00000120       __imp_SDL_GetPerformanceCounter 0000000140005120     SDL2:SDL2.dll
- 0002:00000128       __imp_SDL_ShowSimpleMessageBox 0000000140005128     SDL2:SDL2.dll
- 0002:00000130       __imp_SDL_Log              0000000140005130     SDL2:SDL2.dll
- 0002:00000138       __imp_SDL_UnloadObject     0000000140005138     SDL2:SDL2.dll
- 0002:00000140       __imp_SDL_LoadFunction     0000000140005140     SDL2:SDL2.dll
- 0002:00000148       __imp_SDL_LoadObject       0000000140005148     SDL2:SDL2.dll
- 0002:00000150       __imp_SDL_PollEvent        0000000140005150     SDL2:SDL2.dll
- 0002:00000158       __imp_SDL_GL_SwapWindow    0000000140005158     SDL2:SDL2.dll
- 0002:00000160       __imp_SDL_GL_CreateContext 0000000140005160     SDL2:SDL2.dll
- 0002:00000168       __imp_SDL_GL_SetAttribute  0000000140005168     SDL2:SDL2.dll
- 0002:00000170       __imp_SDL_GetWindowSurface 0000000140005170     SDL2:SDL2.dll
- 0002:00000178       __imp_SDL_SetWindowFullscreen 0000000140005178     SDL2:SDL2.dll
- 0002:00000180       __imp_SDL_SetWindowSize    0000000140005180     SDL2:SDL2.dll
- 0002:00000188       __imp_SDL_CreateWindow     0000000140005188     SDL2:SDL2.dll
- 0002:00000190       __imp_SDL_GetWindowDisplayIndex 0000000140005190     SDL2:SDL2.dll
- 0002:00000198       __imp_SDL_GetDesktopDisplayMode 0000000140005198     SDL2:SDL2.dll
- 0002:000001a0       __imp_SDL_PauseAudioDevice 00000001400051a0     SDL2:SDL2.dll
- 0002:000001a8       __imp_SDL_OpenAudioDevice  00000001400051a8     SDL2:SDL2.dll
- 0002:000001b0       __imp_SDL_GetError         00000001400051b0     SDL2:SDL2.dll
- 0002:000001b8       __imp_SDL_SetMainReady     00000001400051b8     SDL2:SDL2.dll
- 0002:000001c0       __imp_SDL_isspace          00000001400051c0     SDL2:SDL2.dll
- 0002:000001c8       __imp_SDL_wcslen           00000001400051c8     SDL2:SDL2.dll
- 0002:000001d0       __imp_SDL_iconv_string     00000001400051d0     SDL2:SDL2.dll
- 0002:000001d8       __imp_SDL_malloc           00000001400051d8     SDL2:SDL2.dll
- 0002:000001e0       __imp_SDL_free             00000001400051e0     SDL2:SDL2.dll
- 0002:000001e8       __imp_SDL_memset           00000001400051e8     SDL2:SDL2.dll
- 0002:000001f0       \177SDL2_NULL_THUNK_DATA   00000001400051f0     SDL2:SDL2.dll
- 0002:000001f8       __imp___std_exception_destroy 00000001400051f8     vcruntime:VCRUNTIME140.dll
- 0002:00000200       __imp_memset               0000000140005200     vcruntime:VCRUNTIME140.dll
- 0002:00000208       __imp___std_exception_copy 0000000140005208     vcruntime:VCRUNTIME140.dll
- 0002:00000210       __imp_memmove              0000000140005210     vcruntime:VCRUNTIME140.dll
- 0002:00000218       __imp__CxxThrowException   0000000140005218     vcruntime:VCRUNTIME140.dll
- 0002:00000220       __imp___CxxFrameHandler3   0000000140005220     vcruntime:VCRUNTIME140.dll
- 0002:00000228       __imp___telemetry_main_invoke_trigger 0000000140005228     vcruntime:VCRUNTIME140.dll
- 0002:00000230       __imp___telemetry_main_return_trigger 0000000140005230     vcruntime:VCRUNTIME140.dll
- 0002:00000238       __imp___C_specific_handler 0000000140005238     vcruntime:VCRUNTIME140.dll
- 0002:00000240       \177VCRUNTIME140_NULL_THUNK_DATA 0000000140005240     vcruntime:VCRUNTIME140.dll
- 0002:00000248       __imp__set_new_mode        0000000140005248     ucrt:api-ms-win-crt-heap-l1-1-0.dll
- 0002:00000250       __imp_malloc               0000000140005250     ucrt:api-ms-win-crt-heap-l1-1-0.dll
- 0002:00000258       __imp__callnewh            0000000140005258     ucrt:api-ms-win-crt-heap-l1-1-0.dll
- 0002:00000260       __imp_free                 0000000140005260     ucrt:api-ms-win-crt-heap-l1-1-0.dll
- 0002:00000268       \177api-ms-win-crt-heap-l1-1-0_NULL_THUNK_DATA 0000000140005268     ucrt:api-ms-win-crt-heap-l1-1-0.dll
- 0002:00000270       __imp__configthreadlocale  0000000140005270     ucrt:api-ms-win-crt-locale-l1-1-0.dll
- 0002:00000278       \177api-ms-win-crt-locale-l1-1-0_NULL_THUNK_DATA 0000000140005278     ucrt:api-ms-win-crt-locale-l1-1-0.dll
- 0002:00000280       __imp___setusermatherr     0000000140005280     ucrt:api-ms-win-crt-math-l1-1-0.dll
- 0002:00000288       \177api-ms-win-crt-math-l1-1-0_NULL_THUNK_DATA 0000000140005288     ucrt:api-ms-win-crt-math-l1-1-0.dll
- 0002:00000290       __imp__invalid_parameter_noinfo_noreturn 0000000140005290     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:00000298       __imp___p___argc           0000000140005298     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:000002a0       __imp___p___argv           00000001400052a0     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:000002a8       __imp__cexit               00000001400052a8     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:000002b0       __imp__seh_filter_exe      00000001400052b0     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:000002b8       __imp__register_thread_local_exe_atexit_callback 00000001400052b8     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:000002c0       __imp__initterm_e          00000001400052c0     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:000002c8       __imp__initterm            00000001400052c8     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:000002d0       __imp__get_initial_narrow_environment 00000001400052d0     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:000002d8       __imp__exit                00000001400052d8     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:000002e0       __imp__initialize_onexit_table 00000001400052e0     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:000002e8       __imp__register_onexit_function 00000001400052e8     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:000002f0       __imp__crt_atexit          00000001400052f0     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:000002f8       __imp_terminate            00000001400052f8     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:00000300       __imp__initialize_narrow_environment 0000000140005300     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:00000308       __imp__configure_narrow_argv 0000000140005308     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:00000310       __imp_exit                 0000000140005310     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:00000318       __imp__set_app_type        0000000140005318     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:00000320       __imp__c_exit              0000000140005320     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:00000328       \177api-ms-win-crt-runtime-l1-1-0_NULL_THUNK_DATA 0000000140005328     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:00000330       __imp___stdio_common_vfprintf 0000000140005330     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
- 0002:00000338       __imp___acrt_iob_func      0000000140005338     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
- 0002:00000340       __imp__set_fmode           0000000140005340     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
- 0002:00000348       __imp___p__commode         0000000140005348     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
- 0002:00000350       \177api-ms-win-crt-stdio-l1-1-0_NULL_THUNK_DATA 0000000140005350     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
- 0002:00000358       __guard_check_icall_fptr   0000000140005358     MSVCRT:guard_support.obj
- 0002:00000360       __guard_dispatch_icall_fptr 0000000140005360     MSVCRT:guard_support.obj
- 0002:00000368       __xc_a                     0000000140005368     MSVCRT:initializers.obj
- 0002:00000378       __xc_z                     0000000140005378     MSVCRT:initializers.obj
- 0002:00000380       __xi_a                     0000000140005380     MSVCRT:initializers.obj
- 0002:00000398       __xi_z                     0000000140005398     MSVCRT:initializers.obj
- 0002:000003a0       __xp_a                     00000001400053a0     MSVCRT:initializers.obj
- 0002:000003a8       __xp_z                     00000001400053a8     MSVCRT:initializers.obj
- 0002:000003b0       __xt_a                     00000001400053b0     MSVCRT:initializers.obj
- 0002:000003b8       __xt_z                     00000001400053b8     MSVCRT:initializers.obj
- 0002:00000648       ??_C@_0BI@CFPLBAOH@invalid?5string?5position?$AA@ 0000000140005648     sdl_handmade.obj
- 0002:00000660       ??_C@_0BA@JFNIOLAK@string?5too?5long?$AA@ 0000000140005660     sdl_handmade.obj
- 0002:00000670       __real@3e19999a            0000000140005670     sdl_handmade.obj
- 0002:00000674       __real@3e99999a            0000000140005674     sdl_handmade.obj
- 0002:00000678       __real@3f800000            0000000140005678     sdl_handmade.obj
- 0002:00000680       __real@3ff0000000000000    0000000140005680     sdl_handmade.obj
- 0002:00000688       __real@40000000            0000000140005688     sdl_handmade.obj
- 0002:00000690       __real@4059000000000000    0000000140005690     sdl_handmade.obj
- 0002:00000698       __real@42c80000            0000000140005698     sdl_handmade.obj
- 0002:0000069c       __real@447a0000            000000014000569c     sdl_handmade.obj
- 0002:000006a0       __real@5f800000            00000001400056a0     sdl_handmade.obj
- 0002:000006b0       ??_7exception@std@@6B@     00000001400056b0     MSVCRT:throw_bad_alloc.obj
- 0002:000006c0       ??_C@_0BC@EOODALEL@Unknown?5exception?$AA@ 00000001400056c0     MSVCRT:throw_bad_alloc.obj
- 0002:000006e0       ??_7bad_alloc@std@@6B@     00000001400056e0     MSVCRT:throw_bad_alloc.obj
- 0002:000006f0       ??_C@_0P@GHFPNOJB@bad?5allocation?$AA@ 00000001400056f0     MSVCRT:throw_bad_alloc.obj
- 0002:00000708       ??_7bad_array_new_length@std@@6B@ 0000000140005708     MSVCRT:throw_bad_alloc.obj
- 0002:00000718       ??_C@_0BF@KINCDENJ@bad?5array?5new?5length?$AA@ 0000000140005718     MSVCRT:throw_bad_alloc.obj
- 0002:00000748       ??_7type_info@@6B@         0000000140005748     MSVCRT:std_type_info_static.obj
- 0002:00000750       ??_C@_05EGJIMALK@UTF?98?$AA@ 0000000140005750     SDL2main:SDL_windows_main.obj
- 0002:00000758       ??_C@_08NBDJLNFA@UTF?916LE?$AA@ 0000000140005758     SDL2main:SDL_windows_main.obj
- 0002:00000768       ??_C@_0M@HFFOIJBL@Fatal?5Error?$AA@ 0000000140005768     SDL2main:SDL_windows_main.obj
- 0002:00000778       ??_C@_0BJ@HFNMHALN@Out?5of?5memory?5?9?5aborting?$AA@ 0000000140005778     SDL2main:SDL_windows_main.obj
- 0002:00000800       _load_config_used          0000000140005800     MSVCRT:loadcfg.obj
- 0002:00000898       ??_R4exception@std@@6B@    0000000140005898     MSVCRT:throw_bad_alloc.obj
- 0002:000008c0       ??_R3exception@std@@8      00000001400058c0     MSVCRT:throw_bad_alloc.obj
- 0002:000008d8       ??_R2exception@std@@8      00000001400058d8     MSVCRT:throw_bad_alloc.obj
- 0002:000008e8       ??_R1A@?0A@EA@exception@std@@8 00000001400058e8     MSVCRT:throw_bad_alloc.obj
- 0002:00000910       ??_R4bad_alloc@std@@6B@    0000000140005910     MSVCRT:throw_bad_alloc.obj
- 0002:00000938       ??_R3bad_alloc@std@@8      0000000140005938     MSVCRT:throw_bad_alloc.obj
- 0002:00000950       ??_R2bad_alloc@std@@8      0000000140005950     MSVCRT:throw_bad_alloc.obj
- 0002:00000968       ??_R1A@?0A@EA@bad_alloc@std@@8 0000000140005968     MSVCRT:throw_bad_alloc.obj
- 0002:00000990       ??_R4bad_array_new_length@std@@6B@ 0000000140005990     MSVCRT:throw_bad_alloc.obj
- 0002:000009b8       ??_R3bad_array_new_length@std@@8 00000001400059b8     MSVCRT:throw_bad_alloc.obj
- 0002:000009d0       ??_R2bad_array_new_length@std@@8 00000001400059d0     MSVCRT:throw_bad_alloc.obj
- 0002:000009f0       ??_R1A@?0A@EA@bad_array_new_length@std@@8 00000001400059f0     MSVCRT:throw_bad_alloc.obj
- 0002:00000a18       ??_R4type_info@@6B@        0000000140005a18     MSVCRT:std_type_info_static.obj
- 0002:00000a40       ??_R3type_info@@8          0000000140005a40     MSVCRT:std_type_info_static.obj
- 0002:00000a58       ??_R2type_info@@8          0000000140005a58     MSVCRT:std_type_info_static.obj
- 0002:00000a68       ??_R1A@?0A@EA@type_info@@8 0000000140005a68     MSVCRT:std_type_info_static.obj
- 0002:00000d78       __rtc_iaa                  0000000140005d78     MSVCRT:_initsect_.obj
- 0002:00000d80       __rtc_izz                  0000000140005d80     MSVCRT:_initsect_.obj
- 0002:00000d88       __rtc_taa                  0000000140005d88     MSVCRT:_initsect_.obj
- 0002:00000d90       __rtc_tzz                  0000000140005d90     MSVCRT:_initsect_.obj
- 0002:000010e0       _TI2?AVbad_alloc@std@@     00000001400060e0     MSVCRT:throw_bad_alloc.obj
- 0002:00001100       _CTA2?AVbad_alloc@std@@    0000000140006100     MSVCRT:throw_bad_alloc.obj
- 0002:00001118       _CT??_R0?AVbad_alloc@std@@@8??0bad_alloc@std@@QEAA@AEBV01@@Z24 0000000140006118     MSVCRT:throw_bad_alloc.obj
- 0002:00001140       _CT??_R0?AVexception@std@@@8??0exception@std@@QEAA@AEBV01@@Z24 0000000140006140     MSVCRT:throw_bad_alloc.obj
- 0002:00001168       _TI3?AVbad_array_new_length@std@@ 0000000140006168     MSVCRT:throw_bad_alloc.obj
- 0002:00001188       _CTA3?AVbad_array_new_length@std@@ 0000000140006188     MSVCRT:throw_bad_alloc.obj
- 0002:000011a8       _CT??_R0?AVbad_array_new_length@std@@@8??0bad_array_new_length@std@@QEAA@AEBV01@@Z24 00000001400061a8     MSVCRT:throw_bad_alloc.obj
- 0002:000011cc       __IMPORT_DESCRIPTOR_SDL2   00000001400061cc     SDL2:SDL2.dll
- 0002:000011e0       __IMPORT_DESCRIPTOR_OPENGL32 00000001400061e0     opengl32:OPENGL32.dll
- 0002:000011f4       __IMPORT_DESCRIPTOR_MSVCP140 00000001400061f4     msvcprt:MSVCP140.dll
- 0002:00001208       __IMPORT_DESCRIPTOR_KERNEL32 0000000140006208     kernel32:KERNEL32.dll
- 0002:0000121c       __IMPORT_DESCRIPTOR_VCRUNTIME140 000000014000621c     vcruntime:VCRUNTIME140.dll
- 0002:00001230       __IMPORT_DESCRIPTOR_api-ms-win-crt-runtime-l1-1-0 0000000140006230     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:00001244       __IMPORT_DESCRIPTOR_api-ms-win-crt-stdio-l1-1-0 0000000140006244     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
- 0002:00001258       __IMPORT_DESCRIPTOR_api-ms-win-crt-heap-l1-1-0 0000000140006258     ucrt:api-ms-win-crt-heap-l1-1-0.dll
- 0002:0000126c       __IMPORT_DESCRIPTOR_api-ms-win-crt-math-l1-1-0 000000014000626c     ucrt:api-ms-win-crt-math-l1-1-0.dll
- 0002:00001280       __IMPORT_DESCRIPTOR_api-ms-win-crt-locale-l1-1-0 0000000140006280     ucrt:api-ms-win-crt-locale-l1-1-0.dll
- 0002:00001294       __NULL_IMPORT_DESCRIPTOR   0000000140006294     SDL2:SDL2.dll
- 0003:00000000       ?vertices@@3PAMA           0000000140007000     sdl_handmade.obj
- 0003:00000030       __security_cookie          0000000140007030     MSVCRT:gs_cookie.obj
- 0003:00000038       __security_cookie_complement 0000000140007038     MSVCRT:gs_cookie.obj
- 0003:00000040       _fltused                   0000000140007040     MSVCRT:dllsupp.obj
- 0003:00000044       __scrt_native_dllmain_reason 0000000140007044     MSVCRT:utility.obj
- 0003:00000048       __scrt_default_matherr     0000000140007048     MSVCRT:matherr.obj
- 0003:00000050       __isa_available            0000000140007050     MSVCRT:_cpu_disp_.obj
- 0003:00000054       __isa_enabled              0000000140007054     MSVCRT:_cpu_disp_.obj
- 0003:00000058       __memcpy_nt_iters          0000000140007058     MSVCRT:_cpu_disp_.obj
- 0003:00000060       __scrt_ucrt_dll_is_in_use  0000000140007060     MSVCRT:ucrt_stubs.obj
- 0003:00000068       ??_R0?AVbad_alloc@std@@@8  0000000140007068     MSVCRT:throw_bad_alloc.obj
- 0003:00000090       ??_R0?AVexception@std@@@8  0000000140007090     MSVCRT:throw_bad_alloc.obj
- 0003:000000b8       ??_R0?AVbad_array_new_length@std@@@8 00000001400070b8     MSVCRT:throw_bad_alloc.obj
- 0003:000000e8       ??_R0?AVtype_info@@@8      00000001400070e8     MSVCRT:std_type_info_static.obj
- 0003:00000110       ?_OptionsStorage@?1??__local_stdio_printf_options@@9@4_KA 0000000140007110     sdl_handmade.obj
- 0003:00000690       __scrt_current_native_startup_state 0000000140007690     MSVCRT:utility.obj
- 0003:00000698       __scrt_native_startup_lock 0000000140007698     MSVCRT:utility.obj
- 0003:000006e0       ?__type_info_root_node@@3U__type_info_node@@A 00000001400076e0     MSVCRT:tncleanup.obj
- 0003:000006f0       ?_OptionsStorage@?1??__local_stdio_scanf_options@@9@4_KA 00000001400076f0     MSVCRT:default_local_stdio_options.obj
- 0003:000006f8       __scrt_debugger_hook_flag  00000001400076f8     MSVCRT:utility_desktop.obj
- 0003:000006fc       __favor                    00000001400076fc     MSVCRT:_cpu_disp_.obj
- 0003:00000700       __dyn_tls_dtor_callback    0000000140007700     <common>
- 0003:00000708       __dyn_tls_init_callback    0000000140007708     <common>
+ 0001:00000b40       ?GameUpdateAndRenderStub@@YAXPEAUgame_memory@@PEAUSDL_Window@@@Z 0000000140001b40 f   sdl_handmade.obj
+ 0001:00000b60       ?GameGetSoundSamplesStub@@YAXPEAUgame_memory@@@Z 0000000140001b60 f   sdl_handmade.obj
+ 0001:00000b70       GameUpdateAndRender        0000000140001b70 f   sdl_handmade.obj
+ 0001:00000ca0       GameGetSoundSamples        0000000140001ca0 f   sdl_handmade.obj
+ 0001:00000fd0       ??$__vcrt_va_start_verify_argument_type@QEBD@@YAXXZ 0000000140001fd0 f i sdl_handmade.obj
+ 0001:00000fe0       ?Win32GetLastWriteTime@@YA?AU_FILETIME@@PEBD@Z 0000000140001fe0 f i sdl_handmade.obj
+ 0001:00001050       __local_stdio_printf_options 0000000140002050 f i sdl_handmade.obj
+ 0001:00001060       _vfprintf_l                0000000140002060 f i sdl_handmade.obj
+ 0001:000010b0       printf                     00000001400020b0 f i sdl_handmade.obj
+ 0001:0000110e       SDL_memset                 000000014000210e f   SDL2:SDL2.dll
+ 0001:00001114       SDL_GetError               0000000140002114 f   SDL2:SDL2.dll
+ 0001:0000111a       SDL_OpenAudioDevice        000000014000211a f   SDL2:SDL2.dll
+ 0001:00001120       SDL_PauseAudioDevice       0000000140002120 f   SDL2:SDL2.dll
+ 0001:00001126       SDL_GetDesktopDisplayMode  0000000140002126 f   SDL2:SDL2.dll
+ 0001:0000112c       SDL_GetWindowDisplayIndex  000000014000212c f   SDL2:SDL2.dll
+ 0001:00001132       SDL_CreateWindow           0000000140002132 f   SDL2:SDL2.dll
+ 0001:00001138       SDL_SetWindowSize          0000000140002138 f   SDL2:SDL2.dll
+ 0001:0000113e       SDL_SetWindowFullscreen    000000014000213e f   SDL2:SDL2.dll
+ 0001:00001144       SDL_GetWindowSurface       0000000140002144 f   SDL2:SDL2.dll
+ 0001:0000114a       SDL_GL_SetAttribute        000000014000214a f   SDL2:SDL2.dll
+ 0001:00001150       SDL_GL_CreateContext       0000000140002150 f   SDL2:SDL2.dll
+ 0001:00001156       SDL_GL_SwapWindow          0000000140002156 f   SDL2:SDL2.dll
+ 0001:0000115c       SDL_PollEvent              000000014000215c f   SDL2:SDL2.dll
+ 0001:00001162       SDL_LoadObject             0000000140002162 f   SDL2:SDL2.dll
+ 0001:00001168       SDL_LoadFunction           0000000140002168 f   SDL2:SDL2.dll
+ 0001:0000116e       SDL_UnloadObject           000000014000216e f   SDL2:SDL2.dll
+ 0001:00001174       SDL_Log                    0000000140002174 f   SDL2:SDL2.dll
+ 0001:0000117a       SDL_ShowSimpleMessageBox   000000014000217a f   SDL2:SDL2.dll
+ 0001:00001180       SDL_GetPerformanceCounter  0000000140002180 f   SDL2:SDL2.dll
+ 0001:00001186       SDL_GetPerformanceFrequency 0000000140002186 f   SDL2:SDL2.dll
+ 0001:0000118c       SDL_Delay                  000000014000218c f   SDL2:SDL2.dll
+ 0001:00001192       SDL_Init                   0000000140002192 f   SDL2:SDL2.dll
+ 0001:00001198       __GSHandlerCheck           0000000140002198 f   MSVCRT:_gshandler_.obj
+ 0001:000011b8       __GSHandlerCheckCommon     00000001400021b8 f   MSVCRT:_gshandler_.obj
+ 0001:00001230       __security_check_cookie    0000000140002230 f   MSVCRT:_amdsecgs_.obj
+ 0001:000014bc       mainCRTStartup             00000001400024bc f   MSVCRT:exe_main.obj
+ 0001:000014d0       __raise_securityfailure    00000001400024d0 f   MSVCRT:gs_report.obj
+ 0001:00001504       __report_gsfailure         0000000140002504 f   MSVCRT:gs_report.obj
+ 0001:0000164c       __scrt_acquire_startup_lock 000000014000264c f   MSVCRT:utility.obj
+ 0001:00001688       __scrt_initialize_crt      0000000140002688 f   MSVCRT:utility.obj
+ 0001:000016d4       __scrt_initialize_onexit_tables 00000001400026d4 f   MSVCRT:utility.obj
+ 0001:000017a0       __scrt_is_nonwritable_in_current_image 00000001400027a0 f   MSVCRT:utility.obj
+ 0001:0000183c       __scrt_release_startup_lock 000000014000283c f   MSVCRT:utility.obj
+ 0001:00001860       __scrt_uninitialize_crt    0000000140002860 f   MSVCRT:utility.obj
+ 0001:0000188c       _onexit                    000000014000288c f   MSVCRT:utility.obj
+ 0001:000018dc       atexit                     00000001400028dc f   MSVCRT:utility.obj
+ 0001:000018f4       __security_init_cookie     00000001400028f4 f   MSVCRT:gs_support.obj
+ 0001:000019a0       _get_startup_argv_mode     00000001400029a0 f   MSVCRT:argv_mode.obj
+ 0001:000019a8       _get_startup_file_mode     00000001400029a8 f   MSVCRT:file_mode.obj
+ 0001:000019b0       ?__scrt_initialize_type_info@@YAXXZ 00000001400029b0 f   MSVCRT:tncleanup.obj
+ 0001:000019c0       _guard_check_icall_nop     00000001400029c0 f   MSVCRT:guard_support.obj
+ 0001:000019c0       _initialize_invalid_parameter_handler 00000001400029c0 f   MSVCRT:invalid_parameter_handler.obj
+ 0001:000019c0       _initialize_denormal_control 00000001400029c0 f   MSVCRT:denormal_control.obj
+ 0001:000019c4       __local_stdio_scanf_options 00000001400029c4 f i MSVCRT:default_local_stdio_options.obj
+ 0001:000019cc       __scrt_initialize_default_local_stdio_options 00000001400029cc f   MSVCRT:default_local_stdio_options.obj
+ 0001:000019e8       __scrt_is_user_matherr_present 00000001400029e8 f   MSVCRT:matherr_detection.obj
+ 0001:000019f4       __scrt_get_dyn_tls_init_callback 00000001400029f4 f   MSVCRT:dyn_tls_init.obj
+ 0001:000019fc       __scrt_get_dyn_tls_dtor_callback 00000001400029fc f   MSVCRT:dyn_tls_dtor.obj
+ 0001:00001a04       __scrt_fastfail            0000000140002a04 f   MSVCRT:utility_desktop.obj
+ 0001:00001b4c       _matherr                   0000000140002b4c f   MSVCRT:matherr.obj
+ 0001:00001b4c       _get_startup_new_mode      0000000140002b4c f   MSVCRT:new_mode.obj
+ 0001:00001b4c       _get_startup_commit_mode   0000000140002b4c f   MSVCRT:commit_mode.obj
+ 0001:00001b4c       __scrt_initialize_winrt    0000000140002b4c f   MSVCRT:utility_desktop.obj
+ 0001:00001b4c       _get_startup_thread_locale_mode 0000000140002b4c f   MSVCRT:thread_locale.obj
+ 0001:00001b50       __scrt_is_managed_app      0000000140002b50 f   MSVCRT:utility_desktop.obj
+ 0001:00001ba4       __scrt_set_unhandled_exception_filter 0000000140002ba4 f   MSVCRT:utility_desktop.obj
+ 0001:00001bb4       __scrt_unhandled_exception_filter 0000000140002bb4 f   MSVCRT:utility_desktop.obj
+ 0001:00001bec       _RTC_Initialize            0000000140002bec f   MSVCRT:_initsect_.obj
+ 0001:00001c38       _RTC_Terminate             0000000140002c38 f   MSVCRT:_initsect_.obj
+ 0001:00001c84       _guard_check_icall         0000000140002c84 f i MSVCRT:checkcfg.obj
+ 0001:00001c8c       __isa_available_init       0000000140002c8c f   MSVCRT:_cpu_disp_.obj
+ 0001:00001e50       __scrt_is_ucrt_dll_in_use  0000000140002e50 f   MSVCRT:ucrt_detection.obj
+ 0001:00001e60       IsProcessorFeaturePresent  0000000140002e60 f   kernel32:KERNEL32.dll
+ 0001:00001e66       __telemetry_main_invoke_trigger 0000000140002e66 f   vcruntime:VCRUNTIME140.dll
+ 0001:00001e6c       __telemetry_main_return_trigger 0000000140002e6c f   vcruntime:VCRUNTIME140.dll
+ 0001:00001e72       __C_specific_handler       0000000140002e72 f   vcruntime:VCRUNTIME140.dll
+ 0001:00001e78       memset                     0000000140002e78 f   vcruntime:VCRUNTIME140.dll
+ 0001:00001e7e       _seh_filter_exe            0000000140002e7e f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00001e84       _set_app_type              0000000140002e84 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00001e8a       __setusermatherr           0000000140002e8a f   ucrt:api-ms-win-crt-math-l1-1-0.dll
+ 0001:00001e90       _configure_narrow_argv     0000000140002e90 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00001e96       _initialize_narrow_environment 0000000140002e96 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00001e9c       _get_initial_narrow_environment 0000000140002e9c f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00001ea2       _initterm                  0000000140002ea2 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00001ea8       _initterm_e                0000000140002ea8 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00001eae       exit                       0000000140002eae f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00001eb4       _exit                      0000000140002eb4 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00001eba       _set_fmode                 0000000140002eba f   ucrt:api-ms-win-crt-stdio-l1-1-0.dll
+ 0001:00001ec0       __p___argc                 0000000140002ec0 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00001ec6       __p___argv                 0000000140002ec6 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00001ecc       _cexit                     0000000140002ecc f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00001ed2       _c_exit                    0000000140002ed2 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00001ed8       _register_thread_local_exe_atexit_callback 0000000140002ed8 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00001ede       _configthreadlocale        0000000140002ede f   ucrt:api-ms-win-crt-locale-l1-1-0.dll
+ 0001:00001ee4       _set_new_mode              0000000140002ee4 f   ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0001:00001eea       __p__commode               0000000140002eea f   ucrt:api-ms-win-crt-stdio-l1-1-0.dll
+ 0001:00001ef0       _initialize_onexit_table   0000000140002ef0 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00001ef6       _register_onexit_function  0000000140002ef6 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00001efc       _crt_atexit                0000000140002efc f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00001f02       terminate                  0000000140002f02 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:00001f08       SDL_free                   0000000140002f08 f   SDL2:SDL2.dll
+ 0001:00001f0e       SDL_malloc                 0000000140002f0e f   SDL2:SDL2.dll
+ 0001:00001f14       SDL_iconv_string           0000000140002f14 f   SDL2:SDL2.dll
+ 0001:00001f1a       SDL_wcslen                 0000000140002f1a f   SDL2:SDL2.dll
+ 0001:00001f20       SDL_isspace                0000000140002f20 f   SDL2:SDL2.dll
+ 0001:00001f26       SDL_SetMainReady           0000000140002f26 f   SDL2:SDL2.dll
+ 0001:00001f2c       __acrt_uninitialize        0000000140002f2c f   MSVCRT:ucrt_stubs.obj
+ 0001:00001f2c       __scrt_stub_for_acrt_initialize 0000000140002f2c f   MSVCRT:ucrt_stubs.obj
+ 0001:00001f2c       __acrt_initialize          0000000140002f2c f   MSVCRT:ucrt_stubs.obj
+ 0001:00001f2c       __scrt_stub_for_acrt_uninitialize 0000000140002f2c f   MSVCRT:ucrt_stubs.obj
+ 0001:00001f2c       __vcrt_uninitialize        0000000140002f2c f   MSVCRT:ucrt_stubs.obj
+ 0001:00001f2c       __vcrt_initialize          0000000140002f2c f   MSVCRT:ucrt_stubs.obj
+ 0001:00001f40       _guard_dispatch_icall_nop  0000000140002f40 f   MSVCRT:_guard_dispatch_.obj
+ 0002:00000000       __imp_IsDebuggerPresent    0000000140003000     kernel32:KERNEL32.dll
+ 0002:00000008       __imp_GetModuleHandleW     0000000140003008     kernel32:KERNEL32.dll
+ 0002:00000010       __imp_GetCommandLineW      0000000140003010     kernel32:KERNEL32.dll
+ 0002:00000018       __imp_InitializeSListHead  0000000140003018     kernel32:KERNEL32.dll
+ 0002:00000020       __imp_GetSystemTimeAsFileTime 0000000140003020     kernel32:KERNEL32.dll
+ 0002:00000028       __imp_GetCurrentThreadId   0000000140003028     kernel32:KERNEL32.dll
+ 0002:00000030       __imp_GetCurrentProcessId  0000000140003030     kernel32:KERNEL32.dll
+ 0002:00000038       __imp_QueryPerformanceCounter 0000000140003038     kernel32:KERNEL32.dll
+ 0002:00000040       __imp_IsProcessorFeaturePresent 0000000140003040     kernel32:KERNEL32.dll
+ 0002:00000048       __imp_TerminateProcess     0000000140003048     kernel32:KERNEL32.dll
+ 0002:00000050       __imp_GetCurrentProcess    0000000140003050     kernel32:KERNEL32.dll
+ 0002:00000058       __imp_SetUnhandledExceptionFilter 0000000140003058     kernel32:KERNEL32.dll
+ 0002:00000060       __imp_UnhandledExceptionFilter 0000000140003060     kernel32:KERNEL32.dll
+ 0002:00000068       __imp_RtlVirtualUnwind     0000000140003068     kernel32:KERNEL32.dll
+ 0002:00000070       __imp_RtlLookupFunctionEntry 0000000140003070     kernel32:KERNEL32.dll
+ 0002:00000078       __imp_RtlCaptureContext    0000000140003078     kernel32:KERNEL32.dll
+ 0002:00000080       __imp_CopyFileA            0000000140003080     kernel32:KERNEL32.dll
+ 0002:00000088       __imp_VirtualAlloc         0000000140003088     kernel32:KERNEL32.dll
+ 0002:00000090       __imp_GetFileAttributesExA 0000000140003090     kernel32:KERNEL32.dll
+ 0002:00000098       __imp_CompareFileTime      0000000140003098     kernel32:KERNEL32.dll
+ 0002:000000a0       \177KERNEL32_NULL_THUNK_DATA 00000001400030a0     kernel32:KERNEL32.dll
+ 0002:000000a8       __imp_glDrawArrays         00000001400030a8     opengl32:OPENGL32.dll
+ 0002:000000b0       __imp_glViewport           00000001400030b0     opengl32:OPENGL32.dll
+ 0002:000000b8       __imp_glClear              00000001400030b8     opengl32:OPENGL32.dll
+ 0002:000000c0       __imp_glClearColor         00000001400030c0     opengl32:OPENGL32.dll
+ 0002:000000c8       __imp_glClearDepth         00000001400030c8     opengl32:OPENGL32.dll
+ 0002:000000d0       __imp_glEnableClientState  00000001400030d0     opengl32:OPENGL32.dll
+ 0002:000000d8       __imp_glVertexPointer      00000001400030d8     opengl32:OPENGL32.dll
+ 0002:000000e0       \177OPENGL32_NULL_THUNK_DATA 00000001400030e0     opengl32:OPENGL32.dll
+ 0002:000000e8       __imp_SDL_Init             00000001400030e8     SDL2:SDL2.dll
+ 0002:000000f0       __imp_SDL_Delay            00000001400030f0     SDL2:SDL2.dll
+ 0002:000000f8       __imp_SDL_GetPerformanceFrequency 00000001400030f8     SDL2:SDL2.dll
+ 0002:00000100       __imp_SDL_GetPerformanceCounter 0000000140003100     SDL2:SDL2.dll
+ 0002:00000108       __imp_SDL_ShowSimpleMessageBox 0000000140003108     SDL2:SDL2.dll
+ 0002:00000110       __imp_SDL_Log              0000000140003110     SDL2:SDL2.dll
+ 0002:00000118       __imp_SDL_UnloadObject     0000000140003118     SDL2:SDL2.dll
+ 0002:00000120       __imp_SDL_LoadFunction     0000000140003120     SDL2:SDL2.dll
+ 0002:00000128       __imp_SDL_LoadObject       0000000140003128     SDL2:SDL2.dll
+ 0002:00000130       __imp_SDL_PollEvent        0000000140003130     SDL2:SDL2.dll
+ 0002:00000138       __imp_SDL_GL_SwapWindow    0000000140003138     SDL2:SDL2.dll
+ 0002:00000140       __imp_SDL_GL_CreateContext 0000000140003140     SDL2:SDL2.dll
+ 0002:00000148       __imp_SDL_GL_SetAttribute  0000000140003148     SDL2:SDL2.dll
+ 0002:00000150       __imp_SDL_GetWindowSurface 0000000140003150     SDL2:SDL2.dll
+ 0002:00000158       __imp_SDL_SetWindowFullscreen 0000000140003158     SDL2:SDL2.dll
+ 0002:00000160       __imp_SDL_SetWindowSize    0000000140003160     SDL2:SDL2.dll
+ 0002:00000168       __imp_SDL_CreateWindow     0000000140003168     SDL2:SDL2.dll
+ 0002:00000170       __imp_SDL_GetWindowDisplayIndex 0000000140003170     SDL2:SDL2.dll
+ 0002:00000178       __imp_SDL_GetDesktopDisplayMode 0000000140003178     SDL2:SDL2.dll
+ 0002:00000180       __imp_SDL_PauseAudioDevice 0000000140003180     SDL2:SDL2.dll
+ 0002:00000188       __imp_SDL_OpenAudioDevice  0000000140003188     SDL2:SDL2.dll
+ 0002:00000190       __imp_SDL_GetError         0000000140003190     SDL2:SDL2.dll
+ 0002:00000198       __imp_SDL_SetMainReady     0000000140003198     SDL2:SDL2.dll
+ 0002:000001a0       __imp_SDL_isspace          00000001400031a0     SDL2:SDL2.dll
+ 0002:000001a8       __imp_SDL_wcslen           00000001400031a8     SDL2:SDL2.dll
+ 0002:000001b0       __imp_SDL_iconv_string     00000001400031b0     SDL2:SDL2.dll
+ 0002:000001b8       __imp_SDL_malloc           00000001400031b8     SDL2:SDL2.dll
+ 0002:000001c0       __imp_SDL_free             00000001400031c0     SDL2:SDL2.dll
+ 0002:000001c8       __imp_SDL_memset           00000001400031c8     SDL2:SDL2.dll
+ 0002:000001d0       \177SDL2_NULL_THUNK_DATA   00000001400031d0     SDL2:SDL2.dll
+ 0002:000001d8       __imp___telemetry_main_invoke_trigger 00000001400031d8     vcruntime:VCRUNTIME140.dll
+ 0002:000001e0       __imp___C_specific_handler 00000001400031e0     vcruntime:VCRUNTIME140.dll
+ 0002:000001e8       __imp_memset               00000001400031e8     vcruntime:VCRUNTIME140.dll
+ 0002:000001f0       __imp___telemetry_main_return_trigger 00000001400031f0     vcruntime:VCRUNTIME140.dll
+ 0002:000001f8       \177VCRUNTIME140_NULL_THUNK_DATA 00000001400031f8     vcruntime:VCRUNTIME140.dll
+ 0002:00000200       __imp__set_new_mode        0000000140003200     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0002:00000208       \177api-ms-win-crt-heap-l1-1-0_NULL_THUNK_DATA 0000000140003208     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0002:00000210       __imp__configthreadlocale  0000000140003210     ucrt:api-ms-win-crt-locale-l1-1-0.dll
+ 0002:00000218       \177api-ms-win-crt-locale-l1-1-0_NULL_THUNK_DATA 0000000140003218     ucrt:api-ms-win-crt-locale-l1-1-0.dll
+ 0002:00000220       __imp___setusermatherr     0000000140003220     ucrt:api-ms-win-crt-math-l1-1-0.dll
+ 0002:00000228       \177api-ms-win-crt-math-l1-1-0_NULL_THUNK_DATA 0000000140003228     ucrt:api-ms-win-crt-math-l1-1-0.dll
+ 0002:00000230       __imp___p___argc           0000000140003230     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000238       __imp___p___argv           0000000140003238     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000240       __imp__cexit               0000000140003240     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000248       __imp__c_exit              0000000140003248     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000250       __imp__register_thread_local_exe_atexit_callback 0000000140003250     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000258       __imp__seh_filter_exe      0000000140003258     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000260       __imp__initialize_narrow_environment 0000000140003260     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000268       __imp__exit                0000000140003268     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000270       __imp__initialize_onexit_table 0000000140003270     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000278       __imp__register_onexit_function 0000000140003278     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000280       __imp__crt_atexit          0000000140003280     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000288       __imp_terminate            0000000140003288     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000290       __imp_exit                 0000000140003290     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000298       __imp__initterm            0000000140003298     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:000002a0       __imp__initterm_e          00000001400032a0     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:000002a8       __imp__set_app_type        00000001400032a8     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:000002b0       __imp__configure_narrow_argv 00000001400032b0     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:000002b8       __imp__get_initial_narrow_environment 00000001400032b8     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:000002c0       \177api-ms-win-crt-runtime-l1-1-0_NULL_THUNK_DATA 00000001400032c0     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:000002c8       __imp__set_fmode           00000001400032c8     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
+ 0002:000002d0       __imp___p__commode         00000001400032d0     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
+ 0002:000002d8       __imp___acrt_iob_func      00000001400032d8     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
+ 0002:000002e0       __imp___stdio_common_vfprintf 00000001400032e0     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
+ 0002:000002e8       \177api-ms-win-crt-stdio-l1-1-0_NULL_THUNK_DATA 00000001400032e8     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
+ 0002:000002f0       __guard_check_icall_fptr   00000001400032f0     MSVCRT:guard_support.obj
+ 0002:000002f8       __guard_dispatch_icall_fptr 00000001400032f8     MSVCRT:guard_support.obj
+ 0002:00000300       __xc_a                     0000000140003300     MSVCRT:initializers.obj
+ 0002:00000310       __xc_z                     0000000140003310     MSVCRT:initializers.obj
+ 0002:00000318       __xi_a                     0000000140003318     MSVCRT:initializers.obj
+ 0002:00000330       __xi_z                     0000000140003330     MSVCRT:initializers.obj
+ 0002:00000338       __xp_a                     0000000140003338     MSVCRT:initializers.obj
+ 0002:00000340       __xp_z                     0000000140003340     MSVCRT:initializers.obj
+ 0002:00000348       __xt_a                     0000000140003348     MSVCRT:initializers.obj
+ 0002:00000350       __xt_z                     0000000140003350     MSVCRT:initializers.obj
+ 0002:00000544       __real@3e19999a            0000000140003544     sdl_handmade.obj
+ 0002:00000548       __real@3e99999a            0000000140003548     sdl_handmade.obj
+ 0002:0000054c       __real@3f800000            000000014000354c     sdl_handmade.obj
+ 0002:00000550       __real@3ff0000000000000    0000000140003550     sdl_handmade.obj
+ 0002:00000558       __real@40000000            0000000140003558     sdl_handmade.obj
+ 0002:00000560       __real@4059000000000000    0000000140003560     sdl_handmade.obj
+ 0002:00000568       __real@42c80000            0000000140003568     sdl_handmade.obj
+ 0002:0000056c       __real@447a0000            000000014000356c     sdl_handmade.obj
+ 0002:00000570       __real@5f800000            0000000140003570     sdl_handmade.obj
+ 0002:00000588       ??_C@_05EGJIMALK@UTF?98?$AA@ 0000000140003588     SDL2main:SDL_windows_main.obj
+ 0002:00000590       ??_C@_08NBDJLNFA@UTF?916LE?$AA@ 0000000140003590     SDL2main:SDL_windows_main.obj
+ 0002:000005a0       ??_C@_0M@HFFOIJBL@Fatal?5Error?$AA@ 00000001400035a0     SDL2main:SDL_windows_main.obj
+ 0002:000005b0       ??_C@_0BJ@HFNMHALN@Out?5of?5memory?5?9?5aborting?$AA@ 00000001400035b0     SDL2main:SDL_windows_main.obj
+ 0002:00000630       _load_config_used          0000000140003630     MSVCRT:loadcfg.obj
+ 0002:00000978       __rtc_iaa                  0000000140003978     MSVCRT:_initsect_.obj
+ 0002:00000980       __rtc_izz                  0000000140003980     MSVCRT:_initsect_.obj
+ 0002:00000988       __rtc_taa                  0000000140003988     MSVCRT:_initsect_.obj
+ 0002:00000990       __rtc_tzz                  0000000140003990     MSVCRT:_initsect_.obj
+ 0002:00000b04       __IMPORT_DESCRIPTOR_SDL2   0000000140003b04     SDL2:SDL2.dll
+ 0002:00000b18       __IMPORT_DESCRIPTOR_OPENGL32 0000000140003b18     opengl32:OPENGL32.dll
+ 0002:00000b2c       __IMPORT_DESCRIPTOR_KERNEL32 0000000140003b2c     kernel32:KERNEL32.dll
+ 0002:00000b40       __IMPORT_DESCRIPTOR_VCRUNTIME140 0000000140003b40     vcruntime:VCRUNTIME140.dll
+ 0002:00000b54       __IMPORT_DESCRIPTOR_api-ms-win-crt-stdio-l1-1-0 0000000140003b54     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
+ 0002:00000b68       __IMPORT_DESCRIPTOR_api-ms-win-crt-runtime-l1-1-0 0000000140003b68     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000b7c       __IMPORT_DESCRIPTOR_api-ms-win-crt-math-l1-1-0 0000000140003b7c     ucrt:api-ms-win-crt-math-l1-1-0.dll
+ 0002:00000b90       __IMPORT_DESCRIPTOR_api-ms-win-crt-locale-l1-1-0 0000000140003b90     ucrt:api-ms-win-crt-locale-l1-1-0.dll
+ 0002:00000ba4       __IMPORT_DESCRIPTOR_api-ms-win-crt-heap-l1-1-0 0000000140003ba4     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0002:00000bb8       __NULL_IMPORT_DESCRIPTOR   0000000140003bb8     SDL2:SDL2.dll
+ 0003:00000000       ?vertices@@3PAMA           0000000140005000     sdl_handmade.obj
+ 0003:00000030       __security_cookie          0000000140005030     MSVCRT:gs_cookie.obj
+ 0003:00000038       __security_cookie_complement 0000000140005038     MSVCRT:gs_cookie.obj
+ 0003:00000040       _fltused                   0000000140005040     MSVCRT:dllsupp.obj
+ 0003:00000044       __scrt_native_dllmain_reason 0000000140005044     MSVCRT:utility.obj
+ 0003:00000048       __scrt_default_matherr     0000000140005048     MSVCRT:matherr.obj
+ 0003:00000050       __isa_available            0000000140005050     MSVCRT:_cpu_disp_.obj
+ 0003:00000054       __isa_enabled              0000000140005054     MSVCRT:_cpu_disp_.obj
+ 0003:00000058       __memcpy_nt_iters          0000000140005058     MSVCRT:_cpu_disp_.obj
+ 0003:00000060       __scrt_ucrt_dll_is_in_use  0000000140005060     MSVCRT:ucrt_stubs.obj
+ 0003:00000070       ?_OptionsStorage@?1??__local_stdio_printf_options@@9@4_KA 0000000140005070     sdl_handmade.obj
+ 0003:000005f0       __scrt_current_native_startup_state 00000001400055f0     MSVCRT:utility.obj
+ 0003:000005f8       __scrt_native_startup_lock 00000001400055f8     MSVCRT:utility.obj
+ 0003:00000640       ?__type_info_root_node@@3U__type_info_node@@A 0000000140005640     MSVCRT:tncleanup.obj
+ 0003:00000650       ?_OptionsStorage@?1??__local_stdio_scanf_options@@9@4_KA 0000000140005650     MSVCRT:default_local_stdio_options.obj
+ 0003:00000658       __scrt_debugger_hook_flag  0000000140005658     MSVCRT:utility_desktop.obj
+ 0003:0000065c       __favor                    000000014000565c     MSVCRT:_cpu_disp_.obj
+ 0003:00000660       __dyn_tls_dtor_callback    0000000140005660     <common>
+ 0003:00000668       __dyn_tls_init_callback    0000000140005668     <common>
 
- entry point at        0001:0000274c
+ entry point at        0001:000014bc
 
  Static symbols
 
- 0000:ffff6000       .debug$S                   0000000140000000     vcruntime:VCRUNTIME140.dll
- 0000:ffff6000       .debug$S                   0000000140000000     opengl32:OPENGL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     vcruntime:VCRUNTIME140.dll
- 0000:ffff6000       .debug$S                   0000000140000000     opengl32:OPENGL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     opengl32:OPENGL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     vcruntime:VCRUNTIME140.dll
- 0000:ffff6000       .debug$S                   0000000140000000     opengl32:OPENGL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     opengl32:OPENGL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     vcruntime:VCRUNTIME140.dll
- 0000:ffff6000       .debug$S                   0000000140000000     opengl32:OPENGL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     opengl32:OPENGL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     vcruntime:VCRUNTIME140.dll
- 0000:ffff6000       .debug$S                   0000000140000000     msvcprt:MSVCP140.dll
- 0000:ffff6000       .debug$S                   0000000140000000     msvcprt:MSVCP140.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-heap-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-heap-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-heap-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-heap-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-locale-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-math-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     msvcprt:MSVCP140.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     SDL2:SDL2.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
- 0000:ffff6000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
- 0000:ffff6000       .debug$S                   0000000140000000     vcruntime:VCRUNTIME140.dll
- 0000:ffff6000       .debug$S                   0000000140000000     vcruntime:VCRUNTIME140.dll
- 0000:ffff6000       .debug$S                   0000000140000000     vcruntime:VCRUNTIME140.dll
- 0000:ffff6000       .debug$S                   0000000140000000     vcruntime:VCRUNTIME140.dll
- 0000:ffff6000       .debug$S                   0000000140000000     vcruntime:VCRUNTIME140.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     vcruntime:VCRUNTIME140.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     vcruntime:VCRUNTIME140.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     vcruntime:VCRUNTIME140.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     vcruntime:VCRUNTIME140.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     vcruntime:VCRUNTIME140.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-locale-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-math-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     SDL2:SDL2.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     opengl32:OPENGL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     opengl32:OPENGL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     opengl32:OPENGL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     opengl32:OPENGL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     opengl32:OPENGL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     opengl32:OPENGL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     opengl32:OPENGL32.dll
+ 0000:ffff8000       .debug$S                   0000000140000000     kernel32:KERNEL32.dll
  0001:00000020       main_getcmdline            0000000140001020 f   SDL2main:SDL_windows_main.obj
  0001:000000f0       ParseCommandLine           00000001400010f0 f   SDL2main:SDL_windows_main.obj
  0001:000002e0       UnEscapeQuotes             00000001400012e0 f   SDL2main:SDL_windows_main.obj
  0001:000003a0       OutOfMemory                00000001400013a0 f   SDL2main:SDL_windows_main.obj
  0001:000003d0       main_utf8                  00000001400013d0 f   SDL2main:SDL_windows_main.obj
- 0001:00000dd0       ?Win32LoadGameCode@@YA?AUwin32_game_code@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z 0000000140001dd0 f   sdl_handmade.obj
- 0001:00000f80       ?Win32UnloadGameCode@@YAXPEAUwin32_game_code@@@Z 0000000140001f80 f   sdl_handmade.obj
- 0001:00000fe0       ?SDLCustom_OpenAudioContext@@YA_NUSDL_AudioSpec@@0I@Z 0000000140001fe0 f   sdl_handmade.obj
- 0001:000010c0       ?SDLCustom_GetMonitorRefreshRate@@YAHPEAUSDL_Window@@@Z 00000001400020c0 f   sdl_handmade.obj
- 0001:00001130       ?SDLCustom_GetSecondsElapsed@@YAM_K00@Z 0000000140002130 f   sdl_handmade.obj
- 0001:000024b0       $$000000                   00000001400034b0     MSVCRT:_amdsecgs_.obj
- 0001:000024e4       ?pre_c_initialization@@YAHXZ 00000001400034e4 f   MSVCRT:exe_main.obj
- 0001:00002598       ?post_pgo_initialization@@YAHXZ 0000000140003598 f   MSVCRT:exe_main.obj
- 0001:000025a8       ?pre_cpp_initialization@@YAXXZ 00000001400035a8 f   MSVCRT:exe_main.obj
- 0001:000025c4       ?__scrt_common_main_seh@@YAHXZ 00000001400035c4 f   MSVCRT:exe_main.obj
- 0001:00002a0c       capture_previous_context   0000000140003a0c f   MSVCRT:gs_report.obj
- 0001:000033d0       $$000000                   00000001400043d0     MSVCRT:_guard_dispatch_.obj
- 0001:000033f0       ?dtor$0@?0??Win32LoadGameCode@@YA?AUwin32_game_code@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z@4HA 00000001400043f0 f   sdl_handmade.obj
- 0001:0000340b       ?dtor$1@?0??Win32LoadGameCode@@YA?AUwin32_game_code@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z@4HA 000000014000440b f   sdl_handmade.obj
- 0001:00003430       ?catch$1@?0??_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z@4HA 0000000140004430 f   sdl_handmade.obj
- 0001:0000343d       __catch$?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z$0 000000014000443d f   sdl_handmade.obj
- 0001:0000348a       ?catch$0@?0??_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z@4HA 000000014000448a f   sdl_handmade.obj
- 0001:00003497       __catch$?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z$1 0000000140004497 f   sdl_handmade.obj
- 0001:000034c0       ?filt$0@?0??__scrt_common_main_seh@@YAHXZ@4HA 00000001400044c0 f   MSVCRT:exe_main.obj
- 0001:000034de       __scrt_is_nonwritable_in_current_image$filt$0 00000001400044de f   MSVCRT:utility.obj
- 0002:00000370       ?pre_cpp_initializer@@3P6AXXZEA 0000000140005370     MSVCRT:exe_main.obj
- 0002:00000388       ?pre_c_initializer@@3P6AHXZEA 0000000140005388     MSVCRT:exe_main.obj
- 0002:00000390       ?post_pgo_initializer@@3P6AHXZEA 0000000140005390     MSVCRT:exe_main.obj
- 0002:000003c0       $SG161829                  00000001400053c0     sdl_handmade.obj
- 0002:000003d8       $SG161830                  00000001400053d8     sdl_handmade.obj
- 0002:000003e8       $SG161831                  00000001400053e8     sdl_handmade.obj
- 0002:00000400       $SG161835                  0000000140005400     sdl_handmade.obj
- 0002:00000418       $SG161836                  0000000140005418     sdl_handmade.obj
- 0002:00000428       $SG161839                  0000000140005428     sdl_handmade.obj
- 0002:00000448       $SG161840                  0000000140005448     sdl_handmade.obj
- 0002:00000458       $SG161842                  0000000140005458     sdl_handmade.obj
- 0002:00000468       $SG161844                  0000000140005468     sdl_handmade.obj
- 0002:00000480       $SG161845                  0000000140005480     sdl_handmade.obj
- 0002:00000490       $SG161851                  0000000140005490     sdl_handmade.obj
- 0002:000004a8       $SG161852                  00000001400054a8     sdl_handmade.obj
- 0002:000004d8       $SG161853                  00000001400054d8     sdl_handmade.obj
- 0002:000004e8       $SG161744                  00000001400054e8     sdl_handmade.obj
- 0002:00000500       $SG161745                  0000000140005500     sdl_handmade.obj
- 0002:00000518       $SG161748                  0000000140005518     sdl_handmade.obj
- 0002:00000550       $SG161749                  0000000140005550     sdl_handmade.obj
- 0002:00000560       $SG161762                  0000000140005560     sdl_handmade.obj
- 0002:00000580       $SG161764                  0000000140005580     sdl_handmade.obj
- 0002:000005a8       $cppxdata$?Win32LoadGameCode@@YA?AUwin32_game_code@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z 00000001400055a8     sdl_handmade.obj
- 0002:000005d0       $cppxdata$??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ 00000001400055d0     sdl_handmade.obj
- 0002:000005f8       $cppxdata$?c_str@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAPEBDXZ 00000001400055f8     sdl_handmade.obj
- 0002:00000620       $cppxdata$?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z 0000000140005620     sdl_handmade.obj
- 0002:00000730       GS_ExceptionPointers       0000000140005730     MSVCRT:gs_report.obj
- 0002:00000da0       $unwind$_vfprintf_l        0000000140005da0     sdl_handmade.obj
- 0002:00000da0       $unwind$printf             0000000140005da0     sdl_handmade.obj
- 0002:00000da0       $unwind$?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@AEBV12@_K1@Z 0000000140005da0     sdl_handmade.obj
- 0002:00000da8       $unwind$?copy@?$char_traits@D@std@@SAPEADPEADPEBD_K@Z 0000000140005da8     sdl_handmade.obj
- 0002:00000db4       $unwind$??$destroy@PEAD@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QEAAXPEAPEAD@Z 0000000140005db4     sdl_handmade.obj
- 0002:00000db4       $unwind$?allocate@?$allocator@D@std@@QEAAPEAD_K@Z 0000000140005db4     sdl_handmade.obj
- 0002:00000db4       $unwind$??$destroy@PEAD@?$allocator_traits@V?$allocator@D@std@@@std@@SAXAEAV?$allocator@D@1@PEAPEAD@Z 0000000140005db4     sdl_handmade.obj
- 0002:00000db4       $unwind$?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@PEBD@Z 0000000140005db4     sdl_handmade.obj
- 0002:00000db4       $unwind$??0?$_Wrap_alloc@V?$allocator@D@std@@@std@@QEAA@AEBV?$allocator@D@1@@Z 0000000140005db4     sdl_handmade.obj
- 0002:00000db4       $unwind$?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K@Z 0000000140005db4     sdl_handmade.obj
- 0002:00000db4       $unwind$?allocate@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QEAAPEAD_K@Z 0000000140005db4     sdl_handmade.obj
- 0002:00000dbc       $unwind$?max_size@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QEBA_KU_Nil@2@@Z 0000000140005dbc     sdl_handmade.obj
- 0002:00000dc4       $unwind$?_Myptr@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEBAPEBDXZ 0000000140005dc4     sdl_handmade.obj
- 0002:00000dc4       $unwind$?max_size@?$allocator_traits@V?$allocator@D@std@@@std@@SA_KAEBV?$allocator@D@2@@Z 0000000140005dc4     sdl_handmade.obj
- 0002:00000dc4       $unwind$?_Getal@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAAAEAU?$_Wrap_alloc@V?$allocator@D@std@@@2@XZ 0000000140005dc4     sdl_handmade.obj
- 0002:00000dc4       $unwind$?size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ 0000000140005dc4     sdl_handmade.obj
- 0002:00000dc4       $unwind$?_Getal@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEBAAEBU?$_Wrap_alloc@V?$allocator@D@std@@@2@XZ 0000000140005dc4     sdl_handmade.obj
- 0002:00000dc4       $unwind$?_Get_data@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAAAEAV?$_String_val@U?$_Simple_types@D@std@@@2@XZ 0000000140005dc4     sdl_handmade.obj
- 0002:00000dc4       $unwind$?length@?$char_traits@D@std@@SA_KPEBD@Z 0000000140005dc4     sdl_handmade.obj
- 0002:00000dc4       $unwind$?_Get_data@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEBAAEBV?$_String_val@U?$_Simple_types@D@std@@@2@XZ 0000000140005dc4     sdl_handmade.obj
- 0002:00000dc4       $unwind$?_Bx@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAAAEAT_Bxty@?$_String_val@U?$_Simple_types@D@std@@@2@XZ 0000000140005dc4     sdl_handmade.obj
- 0002:00000dc4       $unwind$?_Mysize@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAAAEA_KXZ 0000000140005dc4     sdl_handmade.obj
- 0002:00000dc4       $unwind$?_Mysize@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEBAAEB_KXZ 0000000140005dc4     sdl_handmade.obj
- 0002:00000dc4       $unwind$?_Myres@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAAAEA_KXZ 0000000140005dc4     sdl_handmade.obj
- 0002:00000dc4       $unwind$?_Xlen@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ 0000000140005dc4     sdl_handmade.obj
- 0002:00000dc4       $unwind$?_Xran@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ 0000000140005dc4     sdl_handmade.obj
- 0002:00000dc4       $unwind$?_Myptr@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAAPEADXZ 0000000140005dc4     sdl_handmade.obj
- 0002:00000dcc       $unwind$?_Inside@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA_NPEBD@Z 0000000140005dcc     sdl_handmade.obj
- 0002:00000dcc       $unwind$??0?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAA@AEBV?$allocator@D@1@@Z 0000000140005dcc     sdl_handmade.obj
- 0002:00000dcc       $unwind$??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@PEBD@Z 0000000140005dcc     sdl_handmade.obj
- 0002:00000dcc       $unwind$?_Eos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K@Z 0000000140005dcc     sdl_handmade.obj
- 0002:00000dd4       $unwind$??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ 0000000140005dd4     sdl_handmade.obj
- 0002:00000de8       $ip2state$??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ 0000000140005de8     sdl_handmade.obj
- 0002:00000df0       $unwind$?c_str@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAPEBDXZ 0000000140005df0     sdl_handmade.obj
- 0002:00000e00       $ip2state$?c_str@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAPEBDXZ 0000000140005e00     sdl_handmade.obj
- 0002:00000e08       $unwind$?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ 0000000140005e08     sdl_handmade.obj
- 0002:00000e10       $unwind$?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z 0000000140005e10     sdl_handmade.obj
- 0002:00000e20       $stateUnwindMap$?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z 0000000140005e20     sdl_handmade.obj
- 0002:00000e40       $tryMap$?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z 0000000140005e40     sdl_handmade.obj
- 0002:00000e68       $handlerMap$0$?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z 0000000140005e68     sdl_handmade.obj
- 0002:00000e7c       $handlerMap$1$?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z 0000000140005e7c     sdl_handmade.obj
- 0002:00000e90       $ip2state$?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z 0000000140005e90     sdl_handmade.obj
- 0002:00000ee0       $unwind$?catch$1@?0??_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z@4HA 0000000140005ee0     sdl_handmade.obj
- 0002:00000ee0       $unwind$?catch$0@?0??_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z@4HA 0000000140005ee0     sdl_handmade.obj
- 0002:00000ef0       $unwind$?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K0@Z 0000000140005ef0     sdl_handmade.obj
- 0002:00000ef0       $unwind$?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA_N_K_N@Z 0000000140005ef0     sdl_handmade.obj
- 0002:00000ef0       $unwind$??$construct@PEADAEAPEAD@?$allocator@D@std@@QEAAXPEAPEADAEAPEAD@Z 0000000140005ef0     sdl_handmade.obj
- 0002:00000ef0       $unwind$?move@?$char_traits@D@std@@SAPEADPEADPEBD_K@Z 0000000140005ef0     sdl_handmade.obj
- 0002:00000ef8       $unwind$?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_N_K@Z 0000000140005ef8     sdl_handmade.obj
- 0002:00000f00       $unwind$SDL_main           0000000140005f00     sdl_handmade.obj
- 0002:00000f14       $unwind$GameUpdateAndRender 0000000140005f14     sdl_handmade.obj
- 0002:00000f1c       $unwind$?Win32LoadGameCode@@YA?AUwin32_game_code@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z 0000000140005f1c     sdl_handmade.obj
- 0002:00000f30       $stateUnwindMap$?Win32LoadGameCode@@YA?AUwin32_game_code@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z 0000000140005f30     sdl_handmade.obj
- 0002:00000f40       $ip2state$?Win32LoadGameCode@@YA?AUwin32_game_code@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z 0000000140005f40     sdl_handmade.obj
- 0002:00000f60       $unwind$?dtor$0@?0??Win32LoadGameCode@@YA?AUwin32_game_code@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z@4HA 0000000140005f60     sdl_handmade.obj
- 0002:00000f68       $unwind$?dtor$1@?0??Win32LoadGameCode@@YA?AUwin32_game_code@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z@4HA 0000000140005f68     sdl_handmade.obj
- 0002:00000f70       $unwind$?Win32UnloadGameCode@@YAXPEAUwin32_game_code@@@Z 0000000140005f70     sdl_handmade.obj
- 0002:00000f78       $unwind$?SDLCustom_OpenAudioContext@@YA_NUSDL_AudioSpec@@0I@Z 0000000140005f78     sdl_handmade.obj
- 0002:00000f80       $unwind$?SDLCustom_GetMonitorRefreshRate@@YAHPEAUSDL_Window@@@Z 0000000140005f80     sdl_handmade.obj
- 0002:00000f88       $unwind$?Win32GetLastWriteTime@@YA?AU_FILETIME@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z 0000000140005f88     sdl_handmade.obj
- 0002:00000f98       $unwind$??$?0AEBV?$allocator@D@std@@$$V@?$_Compressed_pair@U?$_Wrap_alloc@V?$allocator@D@std@@@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@U_One_then_variadic_args_t@1@AEBV?$allocator@D@1@@Z 0000000140005f98     sdl_handmade.obj
- 0002:00000fa0       $unwind$?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEAAPEADXZ 0000000140005fa0     sdl_handmade.obj
- 0002:00000fa0       $unwind$__report_gsfailure 0000000140005fa0     MSVCRT:gs_report.obj
- 0002:00000fa0       $unwind$?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAPEBDXZ 0000000140005fa0     sdl_handmade.obj
- 0002:00000fa0       $unwind$??$addressof@D@std@@YAPEADAEAD@Z 0000000140005fa0     sdl_handmade.obj
- 0002:00000fa8       $unwind$?deallocate@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QEAAXPEAD_K@Z 0000000140005fa8     sdl_handmade.obj
- 0002:00000fa8       $unwind$?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@PEBD_K@Z 0000000140005fa8     sdl_handmade.obj
- 0002:00000fa8       $unwind$??$construct@PEADAEAPEAD@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QEAAXPEAPEADAEAPEAD@Z 0000000140005fa8     sdl_handmade.obj
- 0002:00000fa8       $unwind$??$construct@PEADAEAPEAD@?$allocator_traits@V?$allocator@D@std@@@std@@SAXAEAV?$allocator@D@1@PEAPEADAEAPEAD@Z 0000000140005fa8     sdl_handmade.obj
- 0002:00000fa8       $unwind$?deallocate@?$allocator@D@std@@QEAAXPEAD_K@Z 0000000140005fa8     sdl_handmade.obj
- 0002:00000fb0       $unwind$??$_Deallocate@D@std@@YAXPEAD_K@Z 0000000140005fb0     sdl_handmade.obj
- 0002:00000fb8       $unwind$??$_Allocate@D@std@@YAPEAD_KPEAD_N@Z 0000000140005fb8     sdl_handmade.obj
- 0002:00000fc0       $unwind$__GSHandlerCheckCommon 0000000140005fc0     MSVCRT:_gshandler_.obj
- 0002:00000fc8       $xdatasym                  0000000140005fc8     MSVCRT:_amdsecgs_.obj
- 0002:00000fcc       $unwind$?__scrt_common_main_seh@@YAHXZ 0000000140005fcc     MSVCRT:exe_main.obj
- 0002:00000ff4       $unwind$?filt$0@?0??__scrt_common_main_seh@@YAHXZ@4HA 0000000140005ff4     MSVCRT:exe_main.obj
- 0002:00000ffc       $unwind$??_Gbad_alloc@std@@UEAAPEAXI@Z 0000000140005ffc     MSVCRT:throw_bad_alloc.obj
- 0002:00000ffc       $unwind$??_Gexception@std@@UEAAPEAXI@Z 0000000140005ffc     MSVCRT:throw_bad_alloc.obj
- 0002:00000ffc       $unwind$??_Gbad_array_new_length@std@@UEAAPEAXI@Z 0000000140005ffc     MSVCRT:throw_bad_alloc.obj
- 0002:00001008       $unwind$?__scrt_throw_std_bad_alloc@@YAXXZ 0000000140006008     MSVCRT:throw_bad_alloc.obj
- 0002:00001008       $unwind$?__scrt_throw_std_bad_array_new_length@@YAXXZ 0000000140006008     MSVCRT:throw_bad_alloc.obj
- 0002:00001010       $unwind$capture_previous_context 0000000140006010     MSVCRT:gs_report.obj
- 0002:0000101c       $unwind$?post_pgo_initialization@@YAHXZ 000000014000601c     MSVCRT:exe_main.obj
- 0002:0000101c       $unwind$__scrt_initialize_default_local_stdio_options 000000014000601c     MSVCRT:default_local_stdio_options.obj
- 0002:0000101c       $unwind$atexit             000000014000601c     MSVCRT:utility.obj
- 0002:0000101c       $unwind$__scrt_unhandled_exception_filter 000000014000601c     MSVCRT:utility_desktop.obj
- 0002:0000101c       $unwind$?pre_cpp_initialization@@YAXXZ 000000014000601c     MSVCRT:exe_main.obj
- 0002:0000101c       $unwind$__scrt_is_managed_app 000000014000601c     MSVCRT:utility_desktop.obj
- 0002:0000101c       $unwind$__GSHandlerCheck   000000014000601c     MSVCRT:_gshandler_.obj
- 0002:0000101c       $unwind$mainCRTStartup     000000014000601c     MSVCRT:exe_main.obj
- 0002:0000101c       $unwind$__scrt_acquire_startup_lock 000000014000601c     MSVCRT:utility.obj
- 0002:00001024       $unwind$__scrt_is_nonwritable_in_current_image 0000000140006024     MSVCRT:utility.obj
- 0002:00001044       $unwind$__scrt_is_nonwritable_in_current_image$filt$0 0000000140006044     MSVCRT:utility.obj
- 0002:0000104c       $unwind$??0bad_array_new_length@std@@QEAA@AEBV01@@Z 000000014000604c     MSVCRT:throw_bad_alloc.obj
- 0002:0000104c       $unwind$??0exception@std@@QEAA@AEBV01@@Z 000000014000604c     MSVCRT:throw_bad_alloc.obj
- 0002:0000104c       $unwind$__scrt_uninitialize_crt 000000014000604c     MSVCRT:utility.obj
- 0002:0000104c       $unwind$??0bad_alloc@std@@QEAA@AEBV01@@Z 000000014000604c     MSVCRT:throw_bad_alloc.obj
- 0002:0000104c       $unwind$__scrt_initialize_crt 000000014000604c     MSVCRT:utility.obj
- 0002:0000104c       $unwind$__raise_securityfailure 000000014000604c     MSVCRT:gs_report.obj
- 0002:0000104c       $unwind$__scrt_release_startup_lock 000000014000604c     MSVCRT:utility.obj
- 0002:0000104c       $unwind$??_Gtype_info@@UEAAPEAXI@Z 000000014000604c     MSVCRT:std_type_info_static.obj
- 0002:0000104c       $unwind$?pre_c_initialization@@YAHXZ 000000014000604c     MSVCRT:exe_main.obj
- 0002:0000104c       $unwind$_onexit            000000014000604c     MSVCRT:utility.obj
- 0002:0000104c       $unwind$??2@YAPEAX_K@Z     000000014000604c     MSVCRT:new_scalar.obj
- 0002:00001054       $unwind$__scrt_initialize_onexit_tables 0000000140006054     MSVCRT:utility.obj
- 0002:00001060       $unwind$__security_init_cookie 0000000140006060     MSVCRT:gs_support.obj
- 0002:0000106c       $unwind$__scrt_fastfail    000000014000606c     MSVCRT:utility_desktop.obj
- 0002:0000107c       $unwind$_RTC_Initialize    000000014000607c     MSVCRT:_initsect_.obj
- 0002:0000107c       $unwind$_RTC_Terminate     000000014000607c     MSVCRT:_initsect_.obj
- 0002:0000108c       $unwind$__isa_available_init 000000014000608c     MSVCRT:_cpu_disp_.obj
- 0002:00001098       $xdatasym                  0000000140006098     MSVCRT:_guard_dispatch_.obj
- 0002:0000109c       $unwind$main               000000014000609c     SDL2main:SDL_windows_main.obj
- 0002:000010a4       $unwind$main_getcmdline    00000001400060a4     SDL2main:SDL_windows_main.obj
- 0002:000010ac       $unwind$ParseCommandLine   00000001400060ac     SDL2main:SDL_windows_main.obj
- 0002:000010b4       $unwind$UnEscapeQuotes     00000001400060b4     SDL2main:SDL_windows_main.obj
- 0002:000010bc       $unwind$OutOfMemory        00000001400060bc     SDL2main:SDL_windows_main.obj
- 0002:000010c4       $unwind$main_utf8          00000001400060c4     SDL2main:SDL_windows_main.obj
- 0002:000010cc       $unwind$wmain              00000001400060cc     SDL2main:SDL_windows_main.obj
- 0002:000010d4       $unwind$WinMain            00000001400060d4     SDL2main:SDL_windows_main.obj
- 0002:000017e2       .idata$6                   00000001400067e2     SDL2:SDL2.dll
- 0002:0000185c       .idata$6                   000000014000685c     opengl32:OPENGL32.dll
- 0002:000018c8       .idata$6                   00000001400068c8     msvcprt:MSVCP140.dll
- 0002:00001a7a       .idata$6                   0000000140006a7a     kernel32:KERNEL32.dll
- 0002:00001b56       .idata$6                   0000000140006b56     vcruntime:VCRUNTIME140.dll
- 0002:00001d8a       .idata$6                   0000000140006d8a     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
- 0002:00001dac       .idata$6                   0000000140006dac     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
- 0002:00001dcc       .idata$6                   0000000140006dcc     ucrt:api-ms-win-crt-heap-l1-1-0.dll
- 0002:00001dec       .idata$6                   0000000140006dec     ucrt:api-ms-win-crt-math-l1-1-0.dll
- 0002:00001e0c       .idata$6                   0000000140006e0c     ucrt:api-ms-win-crt-locale-l1-1-0.dll
- 0003:00000120       GS_ExceptionRecord         0000000140007120     MSVCRT:gs_report.obj
- 0003:000001c0       GS_ContextRecord           00000001400071c0     MSVCRT:gs_report.obj
- 0003:000006a0       ?module_local_atexit_table@@3U_onexit_table_t@@A 00000001400076a0     MSVCRT:utility.obj
- 0003:000006b8       ?module_local_at_quick_exit_table@@3U_onexit_table_t@@A 00000001400076b8     MSVCRT:utility.obj
- 0003:000006d0       ?is_initialized_as_dll@@3_NA 00000001400076d0     MSVCRT:utility.obj
- 0004:00000000       $pdata$main                0000000140008000     SDL2main:SDL_windows_main.obj
- 0004:0000000c       $pdata$main_getcmdline     000000014000800c     SDL2main:SDL_windows_main.obj
- 0004:00000018       $pdata$ParseCommandLine    0000000140008018     SDL2main:SDL_windows_main.obj
- 0004:00000024       $pdata$UnEscapeQuotes      0000000140008024     SDL2main:SDL_windows_main.obj
- 0004:00000030       $pdata$OutOfMemory         0000000140008030     SDL2main:SDL_windows_main.obj
- 0004:0000003c       $pdata$main_utf8           000000014000803c     SDL2main:SDL_windows_main.obj
- 0004:00000048       $pdata$wmain               0000000140008048     SDL2main:SDL_windows_main.obj
- 0004:00000054       $pdata$WinMain             0000000140008054     SDL2main:SDL_windows_main.obj
- 0004:00000060       $pdata$SDL_main            0000000140008060     sdl_handmade.obj
- 0004:0000006c       $pdata$GameUpdateAndRender 000000014000806c     sdl_handmade.obj
- 0004:00000078       $pdata$?Win32LoadGameCode@@YA?AUwin32_game_code@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z 0000000140008078     sdl_handmade.obj
- 0004:00000084       $pdata$?Win32UnloadGameCode@@YAXPEAUwin32_game_code@@@Z 0000000140008084     sdl_handmade.obj
- 0004:00000090       $pdata$?SDLCustom_OpenAudioContext@@YA_NUSDL_AudioSpec@@0I@Z 0000000140008090     sdl_handmade.obj
- 0004:0000009c       $pdata$?SDLCustom_GetMonitorRefreshRate@@YAHPEAUSDL_Window@@@Z 000000014000809c     sdl_handmade.obj
- 0004:000000a8       $pdata$??$?0AEBV?$allocator@D@std@@$$V@?$_Compressed_pair@U?$_Wrap_alloc@V?$allocator@D@std@@@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@U_One_then_variadic_args_t@1@AEBV?$allocator@D@1@@Z 00000001400080a8     sdl_handmade.obj
- 0004:000000b4       $pdata$??$_Allocate@D@std@@YAPEAD_KPEAD_N@Z 00000001400080b4     sdl_handmade.obj
- 0004:000000c0       $pdata$??$_Deallocate@D@std@@YAXPEAD_K@Z 00000001400080c0     sdl_handmade.obj
- 0004:000000cc       $pdata$??$addressof@D@std@@YAPEADAEAD@Z 00000001400080cc     sdl_handmade.obj
- 0004:000000d8       $pdata$??$construct@PEADAEAPEAD@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QEAAXPEAPEADAEAPEAD@Z 00000001400080d8     sdl_handmade.obj
- 0004:000000e4       $pdata$??$construct@PEADAEAPEAD@?$allocator@D@std@@QEAAXPEAPEADAEAPEAD@Z 00000001400080e4     sdl_handmade.obj
- 0004:000000f0       $pdata$??$construct@PEADAEAPEAD@?$allocator_traits@V?$allocator@D@std@@@std@@SAXAEAV?$allocator@D@1@PEAPEADAEAPEAD@Z 00000001400080f0     sdl_handmade.obj
- 0004:000000fc       $pdata$??$destroy@PEAD@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QEAAXPEAPEAD@Z 00000001400080fc     sdl_handmade.obj
- 0004:00000108       $pdata$??$destroy@PEAD@?$allocator_traits@V?$allocator@D@std@@@std@@SAXAEAV?$allocator@D@1@PEAPEAD@Z 0000000140008108     sdl_handmade.obj
- 0004:00000114       $pdata$??0?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAA@AEBV?$allocator@D@1@@Z 0000000140008114     sdl_handmade.obj
- 0004:00000120       $pdata$??0?$_Wrap_alloc@V?$allocator@D@std@@@std@@QEAA@AEBV?$allocator@D@1@@Z 0000000140008120     sdl_handmade.obj
- 0004:0000012c       $pdata$??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@PEBD@Z 000000014000812c     sdl_handmade.obj
- 0004:00000138       $pdata$??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ 0000000140008138     sdl_handmade.obj
- 0004:00000144       $pdata$?Win32GetLastWriteTime@@YA?AU_FILETIME@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z 0000000140008144     sdl_handmade.obj
- 0004:00000150       $pdata$?_Bx@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAAAEAT_Bxty@?$_String_val@U?$_Simple_types@D@std@@@2@XZ 0000000140008150     sdl_handmade.obj
- 0004:0000015c       $pdata$?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z 000000014000815c     sdl_handmade.obj
- 0004:00000168       $pdata$?_Eos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K@Z 0000000140008168     sdl_handmade.obj
- 0004:00000174       $pdata$?_Getal@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAAAEAU?$_Wrap_alloc@V?$allocator@D@std@@@2@XZ 0000000140008174     sdl_handmade.obj
- 0004:00000174       $pdata$?_Get_data@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAAAEAV?$_String_val@U?$_Simple_types@D@std@@@2@XZ 0000000140008174     sdl_handmade.obj
- 0004:00000174       $pdata$?_Get_data@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEBAAEBV?$_String_val@U?$_Simple_types@D@std@@@2@XZ 0000000140008174     sdl_handmade.obj
- 0004:00000174       $pdata$?_Getal@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEBAAEBU?$_Wrap_alloc@V?$allocator@D@std@@@2@XZ 0000000140008174     sdl_handmade.obj
- 0004:00000180       $pdata$?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA_N_K_N@Z 0000000140008180     sdl_handmade.obj
- 0004:0000018c       $pdata$?_Inside@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA_NPEBD@Z 000000014000818c     sdl_handmade.obj
- 0004:00000198       $pdata$?_Myptr@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAAPEADXZ 0000000140008198     sdl_handmade.obj
- 0004:00000198       $pdata$?_Myptr@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEBAPEBDXZ 0000000140008198     sdl_handmade.obj
- 0004:000001a4       $pdata$?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAPEBDXZ 00000001400081a4     sdl_handmade.obj
- 0004:000001a4       $pdata$?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEAAPEADXZ 00000001400081a4     sdl_handmade.obj
- 0004:000001b0       $pdata$?_Myres@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAAAEA_KXZ 00000001400081b0     sdl_handmade.obj
- 0004:000001bc       $pdata$?_Mysize@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEAAAEA_KXZ 00000001400081bc     sdl_handmade.obj
- 0004:000001bc       $pdata$?_Mysize@?$_String_alloc@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QEBAAEB_KXZ 00000001400081bc     sdl_handmade.obj
- 0004:000001c8       $pdata$?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_N_K@Z 00000001400081c8     sdl_handmade.obj
- 0004:000001d4       $pdata$?_Xlen@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ 00000001400081d4     sdl_handmade.obj
- 0004:000001e0       $pdata$?_Xran@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAXXZ 00000001400081e0     sdl_handmade.obj
- 0004:000001ec       $pdata$?allocate@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QEAAPEAD_K@Z 00000001400081ec     sdl_handmade.obj
- 0004:000001f8       $pdata$?allocate@?$allocator@D@std@@QEAAPEAD_K@Z 00000001400081f8     sdl_handmade.obj
- 0004:00000204       $pdata$?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@AEBV12@_K1@Z 0000000140008204     sdl_handmade.obj
- 0004:00000210       $pdata$?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@PEBD@Z 0000000140008210     sdl_handmade.obj
- 0004:0000021c       $pdata$?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@PEBD_K@Z 000000014000821c     sdl_handmade.obj
- 0004:00000228       $pdata$?c_str@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAPEBDXZ 0000000140008228     sdl_handmade.obj
- 0004:00000234       $pdata$?copy@?$char_traits@D@std@@SAPEADPEADPEBD_K@Z 0000000140008234     sdl_handmade.obj
- 0004:00000240       $pdata$?deallocate@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QEAAXPEAD_K@Z 0000000140008240     sdl_handmade.obj
- 0004:0000024c       $pdata$?deallocate@?$allocator@D@std@@QEAAXPEAD_K@Z 000000014000824c     sdl_handmade.obj
- 0004:00000258       $pdata$?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K0@Z 0000000140008258     sdl_handmade.obj
- 0004:00000264       $pdata$?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@_K@Z 0000000140008264     sdl_handmade.obj
- 0004:00000270       $pdata$?length@?$char_traits@D@std@@SA_KPEBD@Z 0000000140008270     sdl_handmade.obj
- 0004:0000027c       $pdata$?max_size@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QEBA_KU_Nil@2@@Z 000000014000827c     sdl_handmade.obj
- 0004:00000288       $pdata$?max_size@?$allocator_traits@V?$allocator@D@std@@@std@@SA_KAEBV?$allocator@D@2@@Z 0000000140008288     sdl_handmade.obj
- 0004:00000294       $pdata$?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ 0000000140008294     sdl_handmade.obj
- 0004:000002a0       $pdata$?move@?$char_traits@D@std@@SAPEADPEADPEBD_K@Z 00000001400082a0     sdl_handmade.obj
- 0004:000002ac       $pdata$?size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ 00000001400082ac     sdl_handmade.obj
- 0004:000002b8       $pdata$_vfprintf_l         00000001400082b8     sdl_handmade.obj
- 0004:000002c4       $pdata$printf              00000001400082c4     sdl_handmade.obj
- 0004:000002d0       $pdata$??2@YAPEAX_K@Z      00000001400082d0     MSVCRT:new_scalar.obj
- 0004:000002dc       $pdata$__GSHandlerCheck    00000001400082dc     MSVCRT:_gshandler_.obj
- 0004:000002e8       $pdata$__GSHandlerCheckCommon 00000001400082e8     MSVCRT:_gshandler_.obj
- 0004:00000300       $pdata$?pre_c_initialization@@YAHXZ 0000000140008300     MSVCRT:exe_main.obj
- 0004:0000030c       $pdata$?post_pgo_initialization@@YAHXZ 000000014000830c     MSVCRT:exe_main.obj
- 0004:00000318       $pdata$?pre_cpp_initialization@@YAXXZ 0000000140008318     MSVCRT:exe_main.obj
- 0004:00000324       $pdata$?__scrt_common_main_seh@@YAHXZ 0000000140008324     MSVCRT:exe_main.obj
- 0004:00000330       $pdata$mainCRTStartup      0000000140008330     MSVCRT:exe_main.obj
- 0004:0000033c       $pdata$??0bad_alloc@std@@QEAA@AEBV01@@Z 000000014000833c     MSVCRT:throw_bad_alloc.obj
- 0004:00000348       $pdata$??0bad_array_new_length@std@@QEAA@AEBV01@@Z 0000000140008348     MSVCRT:throw_bad_alloc.obj
- 0004:00000354       $pdata$??0exception@std@@QEAA@AEBV01@@Z 0000000140008354     MSVCRT:throw_bad_alloc.obj
- 0004:00000360       $pdata$??_Gbad_alloc@std@@UEAAPEAXI@Z 0000000140008360     MSVCRT:throw_bad_alloc.obj
- 0004:00000360       $pdata$??_Gbad_array_new_length@std@@UEAAPEAXI@Z 0000000140008360     MSVCRT:throw_bad_alloc.obj
- 0004:00000360       $pdata$??_Gexception@std@@UEAAPEAXI@Z 0000000140008360     MSVCRT:throw_bad_alloc.obj
- 0004:0000036c       $pdata$?__scrt_throw_std_bad_alloc@@YAXXZ 000000014000836c     MSVCRT:throw_bad_alloc.obj
- 0004:00000378       $pdata$?__scrt_throw_std_bad_array_new_length@@YAXXZ 0000000140008378     MSVCRT:throw_bad_alloc.obj
- 0004:00000384       $pdata$__raise_securityfailure 0000000140008384     MSVCRT:gs_report.obj
- 0004:00000390       $pdata$__report_gsfailure  0000000140008390     MSVCRT:gs_report.obj
- 0004:0000039c       $pdata$capture_previous_context 000000014000839c     MSVCRT:gs_report.obj
- 0004:000003a8       $pdata$__scrt_acquire_startup_lock 00000001400083a8     MSVCRT:utility.obj
- 0004:000003b4       $pdata$__scrt_initialize_crt 00000001400083b4     MSVCRT:utility.obj
- 0004:000003c0       $pdata$__scrt_initialize_onexit_tables 00000001400083c0     MSVCRT:utility.obj
- 0004:000003cc       $pdata$__scrt_is_nonwritable_in_current_image 00000001400083cc     MSVCRT:utility.obj
- 0004:000003d8       $pdata$__scrt_release_startup_lock 00000001400083d8     MSVCRT:utility.obj
- 0004:000003e4       $pdata$__scrt_uninitialize_crt 00000001400083e4     MSVCRT:utility.obj
- 0004:000003f0       $pdata$_onexit             00000001400083f0     MSVCRT:utility.obj
- 0004:000003fc       $pdata$atexit              00000001400083fc     MSVCRT:utility.obj
- 0004:00000408       $pdata$__security_init_cookie 0000000140008408     MSVCRT:gs_support.obj
- 0004:00000414       $pdata$__scrt_initialize_default_local_stdio_options 0000000140008414     MSVCRT:default_local_stdio_options.obj
- 0004:00000420       $pdata$__scrt_fastfail     0000000140008420     MSVCRT:utility_desktop.obj
- 0004:0000042c       $pdata$__scrt_is_managed_app 000000014000842c     MSVCRT:utility_desktop.obj
- 0004:00000438       $pdata$__scrt_unhandled_exception_filter 0000000140008438     MSVCRT:utility_desktop.obj
- 0004:00000444       $pdata$_RTC_Initialize     0000000140008444     MSVCRT:_initsect_.obj
- 0004:00000450       $pdata$_RTC_Terminate      0000000140008450     MSVCRT:_initsect_.obj
- 0004:0000045c       $pdata$??_Gtype_info@@UEAAPEAXI@Z 000000014000845c     MSVCRT:std_type_info_static.obj
- 0004:00000468       $pdata$__isa_available_init 0000000140008468     MSVCRT:_cpu_disp_.obj
- 0004:00000480       $pdata$?dtor$0@?0??Win32LoadGameCode@@YA?AUwin32_game_code@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z@4HA 0000000140008480     sdl_handmade.obj
- 0004:0000048c       $pdata$?dtor$1@?0??Win32LoadGameCode@@YA?AUwin32_game_code@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z@4HA 000000014000848c     sdl_handmade.obj
- 0004:00000498       $pdata$?catch$1@?0??_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z@4HA 0000000140008498     sdl_handmade.obj
- 0004:000004a4       $pdata$?catch$0@?0??_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z@4HA 00000001400084a4     sdl_handmade.obj
- 0004:000004b0       $pdata$?filt$0@?0??__scrt_common_main_seh@@YAHXZ@4HA 00000001400084b0     MSVCRT:exe_main.obj
- 0004:000004bc       $pdata$__scrt_is_nonwritable_in_current_image$filt$0 00000001400084bc     MSVCRT:utility.obj
+ 0001:00000cb0       ?Win32LoadGameCode@@YA?AUwin32_game_code@@PEBD0@Z 0000000140001cb0 f   sdl_handmade.obj
+ 0001:00000dd0       ?Win32UnloadGameCode@@YAXPEAUwin32_game_code@@@Z 0000000140001dd0 f   sdl_handmade.obj
+ 0001:00000e30       ?SDLCustom_OpenAudioContext@@YA_NUSDL_AudioSpec@@0I@Z 0000000140001e30 f   sdl_handmade.obj
+ 0001:00000f10       ?SDLCustom_GetMonitorRefreshRate@@YAHPEAUSDL_Window@@@Z 0000000140001f10 f   sdl_handmade.obj
+ 0001:00000f80       ?SDLCustom_GetSecondsElapsed@@YAM_K00@Z 0000000140001f80 f   sdl_handmade.obj
+ 0001:00001220       $$000000                   0000000140002220     MSVCRT:_amdsecgs_.obj
+ 0001:00001254       ?pre_c_initialization@@YAHXZ 0000000140002254 f   MSVCRT:exe_main.obj
+ 0001:00001308       ?post_pgo_initialization@@YAHXZ 0000000140002308 f   MSVCRT:exe_main.obj
+ 0001:00001318       ?pre_cpp_initialization@@YAXXZ 0000000140002318 f   MSVCRT:exe_main.obj
+ 0001:00001334       ?__scrt_common_main_seh@@YAHXZ 0000000140002334 f   MSVCRT:exe_main.obj
+ 0001:000015d8       capture_previous_context   00000001400025d8 f   MSVCRT:gs_report.obj
+ 0001:00001f30       $$000000                   0000000140002f30     MSVCRT:_guard_dispatch_.obj
+ 0001:00001f42       ?filt$0@?0??__scrt_common_main_seh@@YAHXZ@4HA 0000000140002f42 f   MSVCRT:exe_main.obj
+ 0001:00001f60       __scrt_is_nonwritable_in_current_image$filt$0 0000000140002f60 f   MSVCRT:utility.obj
+ 0002:00000308       ?pre_cpp_initializer@@3P6AXXZEA 0000000140003308     MSVCRT:exe_main.obj
+ 0002:00000320       ?pre_c_initializer@@3P6AHXZEA 0000000140003320     MSVCRT:exe_main.obj
+ 0002:00000328       ?post_pgo_initializer@@3P6AHXZEA 0000000140003328     MSVCRT:exe_main.obj
+ 0002:00000360       $SG142348                  0000000140003360     sdl_handmade.obj
+ 0002:00000378       $SG142349                  0000000140003378     sdl_handmade.obj
+ 0002:00000388       $SG142350                  0000000140003388     sdl_handmade.obj
+ 0002:000003a0       $SG142354                  00000001400033a0     sdl_handmade.obj
+ 0002:000003b8       $SG142355                  00000001400033b8     sdl_handmade.obj
+ 0002:000003c8       $SG142357                  00000001400033c8     sdl_handmade.obj
+ 0002:000003e8       $SG142358                  00000001400033e8     sdl_handmade.obj
+ 0002:000003f8       $SG142359                  00000001400033f8     sdl_handmade.obj
+ 0002:00000408       $SG142361                  0000000140003408     sdl_handmade.obj
+ 0002:00000420       $SG142362                  0000000140003420     sdl_handmade.obj
+ 0002:00000430       $SG142368                  0000000140003430     sdl_handmade.obj
+ 0002:00000448       $SG142369                  0000000140003448     sdl_handmade.obj
+ 0002:00000478       $SG142370                  0000000140003478     sdl_handmade.obj
+ 0002:00000488       $SG142270                  0000000140003488     sdl_handmade.obj
+ 0002:000004a0       $SG142271                  00000001400034a0     sdl_handmade.obj
+ 0002:000004b8       $SG142274                  00000001400034b8     sdl_handmade.obj
+ 0002:000004f0       $SG142275                  00000001400034f0     sdl_handmade.obj
+ 0002:00000500       $SG142287                  0000000140003500     sdl_handmade.obj
+ 0002:00000520       $SG142289                  0000000140003520     sdl_handmade.obj
+ 0002:00000578       GS_ExceptionPointers       0000000140003578     MSVCRT:gs_report.obj
+ 0002:00000998       $unwind$printf             0000000140003998     sdl_handmade.obj
+ 0002:00000998       $unwind$_vfprintf_l        0000000140003998     sdl_handmade.obj
+ 0002:000009a0       $unwind$SDL_main           00000001400039a0     sdl_handmade.obj
+ 0002:000009b4       $unwind$GameUpdateAndRender 00000001400039b4     sdl_handmade.obj
+ 0002:000009bc       $unwind$?Win32LoadGameCode@@YA?AUwin32_game_code@@PEBD0@Z 00000001400039bc     sdl_handmade.obj
+ 0002:000009c8       $unwind$?Win32UnloadGameCode@@YAXPEAUwin32_game_code@@@Z 00000001400039c8     sdl_handmade.obj
+ 0002:000009d0       $unwind$?SDLCustom_OpenAudioContext@@YA_NUSDL_AudioSpec@@0I@Z 00000001400039d0     sdl_handmade.obj
+ 0002:000009d8       $unwind$?SDLCustom_GetMonitorRefreshRate@@YAHPEAUSDL_Window@@@Z 00000001400039d8     sdl_handmade.obj
+ 0002:000009e0       $unwind$?Win32GetLastWriteTime@@YA?AU_FILETIME@@PEBD@Z 00000001400039e0     sdl_handmade.obj
+ 0002:000009f0       $unwind$__GSHandlerCheckCommon 00000001400039f0     MSVCRT:_gshandler_.obj
+ 0002:000009f8       $xdatasym                  00000001400039f8     MSVCRT:_amdsecgs_.obj
+ 0002:000009fc       $unwind$?__scrt_common_main_seh@@YAHXZ 00000001400039fc     MSVCRT:exe_main.obj
+ 0002:00000a24       $unwind$?filt$0@?0??__scrt_common_main_seh@@YAHXZ@4HA 0000000140003a24     MSVCRT:exe_main.obj
+ 0002:00000a2c       $unwind$__report_gsfailure 0000000140003a2c     MSVCRT:gs_report.obj
+ 0002:00000a34       $unwind$capture_previous_context 0000000140003a34     MSVCRT:gs_report.obj
+ 0002:00000a40       $unwind$mainCRTStartup     0000000140003a40     MSVCRT:exe_main.obj
+ 0002:00000a40       $unwind$__scrt_acquire_startup_lock 0000000140003a40     MSVCRT:utility.obj
+ 0002:00000a40       $unwind$__scrt_initialize_default_local_stdio_options 0000000140003a40     MSVCRT:default_local_stdio_options.obj
+ 0002:00000a40       $unwind$__GSHandlerCheck   0000000140003a40     MSVCRT:_gshandler_.obj
+ 0002:00000a40       $unwind$__scrt_is_managed_app 0000000140003a40     MSVCRT:utility_desktop.obj
+ 0002:00000a40       $unwind$atexit             0000000140003a40     MSVCRT:utility.obj
+ 0002:00000a40       $unwind$?post_pgo_initialization@@YAHXZ 0000000140003a40     MSVCRT:exe_main.obj
+ 0002:00000a40       $unwind$__scrt_unhandled_exception_filter 0000000140003a40     MSVCRT:utility_desktop.obj
+ 0002:00000a40       $unwind$?pre_cpp_initialization@@YAXXZ 0000000140003a40     MSVCRT:exe_main.obj
+ 0002:00000a48       $unwind$__scrt_is_nonwritable_in_current_image 0000000140003a48     MSVCRT:utility.obj
+ 0002:00000a68       $unwind$__scrt_is_nonwritable_in_current_image$filt$0 0000000140003a68     MSVCRT:utility.obj
+ 0002:00000a70       $unwind$_onexit            0000000140003a70     MSVCRT:utility.obj
+ 0002:00000a70       $unwind$?pre_c_initialization@@YAHXZ 0000000140003a70     MSVCRT:exe_main.obj
+ 0002:00000a70       $unwind$__raise_securityfailure 0000000140003a70     MSVCRT:gs_report.obj
+ 0002:00000a70       $unwind$__scrt_uninitialize_crt 0000000140003a70     MSVCRT:utility.obj
+ 0002:00000a70       $unwind$__scrt_release_startup_lock 0000000140003a70     MSVCRT:utility.obj
+ 0002:00000a70       $unwind$__scrt_initialize_crt 0000000140003a70     MSVCRT:utility.obj
+ 0002:00000a78       $unwind$__scrt_initialize_onexit_tables 0000000140003a78     MSVCRT:utility.obj
+ 0002:00000a84       $unwind$__security_init_cookie 0000000140003a84     MSVCRT:gs_support.obj
+ 0002:00000a90       $unwind$__scrt_fastfail    0000000140003a90     MSVCRT:utility_desktop.obj
+ 0002:00000aa0       $unwind$_RTC_Terminate     0000000140003aa0     MSVCRT:_initsect_.obj
+ 0002:00000aa0       $unwind$_RTC_Initialize    0000000140003aa0     MSVCRT:_initsect_.obj
+ 0002:00000ab0       $unwind$__isa_available_init 0000000140003ab0     MSVCRT:_cpu_disp_.obj
+ 0002:00000ac0       $xdatasym                  0000000140003ac0     MSVCRT:_guard_dispatch_.obj
+ 0002:00000ac4       $unwind$main               0000000140003ac4     SDL2main:SDL_windows_main.obj
+ 0002:00000acc       $unwind$main_getcmdline    0000000140003acc     SDL2main:SDL_windows_main.obj
+ 0002:00000ad4       $unwind$ParseCommandLine   0000000140003ad4     SDL2main:SDL_windows_main.obj
+ 0002:00000adc       $unwind$UnEscapeQuotes     0000000140003adc     SDL2main:SDL_windows_main.obj
+ 0002:00000ae4       $unwind$OutOfMemory        0000000140003ae4     SDL2main:SDL_windows_main.obj
+ 0002:00000aec       $unwind$main_utf8          0000000140003aec     SDL2main:SDL_windows_main.obj
+ 0002:00000af4       $unwind$wmain              0000000140003af4     SDL2main:SDL_windows_main.obj
+ 0002:00000afc       $unwind$WinMain            0000000140003afc     SDL2main:SDL_windows_main.obj
+ 0002:000010a2       .idata$6                   00000001400040a2     SDL2:SDL2.dll
+ 0002:0000111c       .idata$6                   000000014000411c     opengl32:OPENGL32.dll
+ 0002:000012ce       .idata$6                   00000001400042ce     kernel32:KERNEL32.dll
+ 0002:00001342       .idata$6                   0000000140004342     vcruntime:VCRUNTIME140.dll
+ 0002:00001532       .idata$6                   0000000140004532     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
+ 0002:00001552       .idata$6                   0000000140004552     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00001574       .idata$6                   0000000140004574     ucrt:api-ms-win-crt-math-l1-1-0.dll
+ 0002:00001594       .idata$6                   0000000140004594     ucrt:api-ms-win-crt-locale-l1-1-0.dll
+ 0002:000015b6       .idata$6                   00000001400045b6     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0003:00000080       GS_ExceptionRecord         0000000140005080     MSVCRT:gs_report.obj
+ 0003:00000120       GS_ContextRecord           0000000140005120     MSVCRT:gs_report.obj
+ 0003:00000600       ?module_local_atexit_table@@3U_onexit_table_t@@A 0000000140005600     MSVCRT:utility.obj
+ 0003:00000618       ?module_local_at_quick_exit_table@@3U_onexit_table_t@@A 0000000140005618     MSVCRT:utility.obj
+ 0003:00000630       ?is_initialized_as_dll@@3_NA 0000000140005630     MSVCRT:utility.obj
+ 0004:00000000       $pdata$main                0000000140006000     SDL2main:SDL_windows_main.obj
+ 0004:0000000c       $pdata$main_getcmdline     000000014000600c     SDL2main:SDL_windows_main.obj
+ 0004:00000018       $pdata$ParseCommandLine    0000000140006018     SDL2main:SDL_windows_main.obj
+ 0004:00000024       $pdata$UnEscapeQuotes      0000000140006024     SDL2main:SDL_windows_main.obj
+ 0004:00000030       $pdata$OutOfMemory         0000000140006030     SDL2main:SDL_windows_main.obj
+ 0004:0000003c       $pdata$main_utf8           000000014000603c     SDL2main:SDL_windows_main.obj
+ 0004:00000048       $pdata$wmain               0000000140006048     SDL2main:SDL_windows_main.obj
+ 0004:00000054       $pdata$WinMain             0000000140006054     SDL2main:SDL_windows_main.obj
+ 0004:00000060       $pdata$SDL_main            0000000140006060     sdl_handmade.obj
+ 0004:0000006c       $pdata$GameUpdateAndRender 000000014000606c     sdl_handmade.obj
+ 0004:00000078       $pdata$?Win32LoadGameCode@@YA?AUwin32_game_code@@PEBD0@Z 0000000140006078     sdl_handmade.obj
+ 0004:00000084       $pdata$?Win32UnloadGameCode@@YAXPEAUwin32_game_code@@@Z 0000000140006084     sdl_handmade.obj
+ 0004:00000090       $pdata$?SDLCustom_OpenAudioContext@@YA_NUSDL_AudioSpec@@0I@Z 0000000140006090     sdl_handmade.obj
+ 0004:0000009c       $pdata$?SDLCustom_GetMonitorRefreshRate@@YAHPEAUSDL_Window@@@Z 000000014000609c     sdl_handmade.obj
+ 0004:000000a8       $pdata$?Win32GetLastWriteTime@@YA?AU_FILETIME@@PEBD@Z 00000001400060a8     sdl_handmade.obj
+ 0004:000000b4       $pdata$_vfprintf_l         00000001400060b4     sdl_handmade.obj
+ 0004:000000c0       $pdata$printf              00000001400060c0     sdl_handmade.obj
+ 0004:000000cc       $pdata$__GSHandlerCheck    00000001400060cc     MSVCRT:_gshandler_.obj
+ 0004:000000d8       $pdata$__GSHandlerCheckCommon 00000001400060d8     MSVCRT:_gshandler_.obj
+ 0004:000000f0       $pdata$?pre_c_initialization@@YAHXZ 00000001400060f0     MSVCRT:exe_main.obj
+ 0004:000000fc       $pdata$?post_pgo_initialization@@YAHXZ 00000001400060fc     MSVCRT:exe_main.obj
+ 0004:00000108       $pdata$?pre_cpp_initialization@@YAXXZ 0000000140006108     MSVCRT:exe_main.obj
+ 0004:00000114       $pdata$?__scrt_common_main_seh@@YAHXZ 0000000140006114     MSVCRT:exe_main.obj
+ 0004:00000120       $pdata$mainCRTStartup      0000000140006120     MSVCRT:exe_main.obj
+ 0004:0000012c       $pdata$__raise_securityfailure 000000014000612c     MSVCRT:gs_report.obj
+ 0004:00000138       $pdata$__report_gsfailure  0000000140006138     MSVCRT:gs_report.obj
+ 0004:00000144       $pdata$capture_previous_context 0000000140006144     MSVCRT:gs_report.obj
+ 0004:00000150       $pdata$__scrt_acquire_startup_lock 0000000140006150     MSVCRT:utility.obj
+ 0004:0000015c       $pdata$__scrt_initialize_crt 000000014000615c     MSVCRT:utility.obj
+ 0004:00000168       $pdata$__scrt_initialize_onexit_tables 0000000140006168     MSVCRT:utility.obj
+ 0004:00000174       $pdata$__scrt_is_nonwritable_in_current_image 0000000140006174     MSVCRT:utility.obj
+ 0004:00000180       $pdata$__scrt_release_startup_lock 0000000140006180     MSVCRT:utility.obj
+ 0004:0000018c       $pdata$__scrt_uninitialize_crt 000000014000618c     MSVCRT:utility.obj
+ 0004:00000198       $pdata$_onexit             0000000140006198     MSVCRT:utility.obj
+ 0004:000001a4       $pdata$atexit              00000001400061a4     MSVCRT:utility.obj
+ 0004:000001b0       $pdata$__security_init_cookie 00000001400061b0     MSVCRT:gs_support.obj
+ 0004:000001bc       $pdata$__scrt_initialize_default_local_stdio_options 00000001400061bc     MSVCRT:default_local_stdio_options.obj
+ 0004:000001c8       $pdata$__scrt_fastfail     00000001400061c8     MSVCRT:utility_desktop.obj
+ 0004:000001d4       $pdata$__scrt_is_managed_app 00000001400061d4     MSVCRT:utility_desktop.obj
+ 0004:000001e0       $pdata$__scrt_unhandled_exception_filter 00000001400061e0     MSVCRT:utility_desktop.obj
+ 0004:000001ec       $pdata$_RTC_Initialize     00000001400061ec     MSVCRT:_initsect_.obj
+ 0004:000001f8       $pdata$_RTC_Terminate      00000001400061f8     MSVCRT:_initsect_.obj
+ 0004:00000204       $pdata$__isa_available_init 0000000140006204     MSVCRT:_cpu_disp_.obj
+ 0004:0000021c       $pdata$?filt$0@?0??__scrt_common_main_seh@@YAHXZ@4HA 000000014000621c     MSVCRT:exe_main.obj
+ 0004:00000228       $pdata$__scrt_is_nonwritable_in_current_image$filt$0 0000000140006228     MSVCRT:utility.obj

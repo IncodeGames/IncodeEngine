@@ -1,4 +1,5 @@
-#include <string>
+#include <string.h>
+#include <cstdio>
 #include <GLM/glm.hpp>
 
 #include "handmade.cpp"
@@ -14,12 +15,12 @@ struct win32_game_code
 };
 
 inline FILETIME
-Win32GetLastWriteTime(const std::string filename)
+Win32GetLastWriteTime(const char *filename)
 {
     FILETIME lastWriteTime = {};
 
     WIN32_FILE_ATTRIBUTE_DATA data;
-    if (GetFileAttributesEx(filename.c_str(), GetFileExInfoStandard, &data))
+    if (GetFileAttributesEx(filename, GetFileExInfoStandard, &data))
     {
         lastWriteTime = data.ftLastWriteTime;
     }
@@ -34,14 +35,14 @@ Win32TimeIsValid(FILETIME time)
     return (result);
 }
 
-static win32_game_code Win32LoadGameCode(const std::string srcFileName, const std::string destFileName)
+static win32_game_code Win32LoadGameCode(const char *srcFileName, const char *destFileName)
 {
     win32_game_code result = {};
 
-    result.DLLLastWriteTime = Win32GetLastWriteTime(srcFileName.c_str());
+    result.DLLLastWriteTime = Win32GetLastWriteTime(srcFileName);
 
-    CopyFile(srcFileName.c_str(), destFileName.c_str(), FALSE);
-    result.gameCodeDLL = (HMODULE)SDL_LoadObject(destFileName.c_str());
+    CopyFile(srcFileName, destFileName, FALSE);
+    result.gameCodeDLL = (HMODULE)SDL_LoadObject(destFileName);
     if (result.gameCodeDLL)
     {
         result.UpdateAndRender = (game_update_and_render *)SDL_LoadFunction(result.gameCodeDLL, "GameUpdateAndRender");
@@ -128,7 +129,7 @@ int main(int argc, char *args[])
 
     int width = 1280;
     int height = 720;
-    const std::string &title = "Game Window Title";
+    const char *title = "Game Window Title";
 
     game_state gameState = {};
     gameState.gameRunning = true;
@@ -158,7 +159,7 @@ int main(int argc, char *args[])
         SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
         SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 4);
 
-        SDL_Window *window = SDL_CreateWindow(title.c_str(),
+        SDL_Window *window = SDL_CreateWindow(title,
                                               SDL_WINDOWPOS_CENTERED,
                                               SDL_WINDOWPOS_CENTERED,
                                               width,
